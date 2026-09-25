@@ -1,0 +1,683 @@
+/* ==========================================================================
+   JB Sweet Temptations — Mobile Dedicated Stylesheet (max-width: 767px)
+   Encapsulated overrides for mobile phones (320px - 767px)
+   Leaves Desktop & Tablet (>=768px) 100% UNTOUCHED
+   ========================================================================== */
+
+@media (max-width: 767px) {
+
+  /* ------------------------------------------------------------------------
+     1. Layout, Viewport Bounds & Safe Area Inset Variables
+     ------------------------------------------------------------------------ */
+  :root {
+    --header-height: 62px;
+    --bottom-bar-height: 60px;
+  }
+
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  body {
+    padding-top: var(--header-height);
+    padding-bottom: calc(var(--bottom-bar-height) + env(safe-area-inset-bottom, 0px) + 20px);
+  }
+
+  .container {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 14px;
+    padding-right: 14px;
+    box-sizing: border-box;
+  }
+
+  .section-padding {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .section-header {
+    margin-bottom: 20px;
+  }
+
+  .section-kicker {
+    font-size: 0.75rem;
+    padding: 3px 10px;
+    margin-bottom: 6px;
+  }
+
+  .section-title {
+    font-size: 1.7rem; /* ~27px */
+    line-height: 1.2;
+    margin-bottom: 6px;
+  }
+
+  .section-intro {
+    font-size: 0.94rem;
+    line-height: 1.45;
+  }
+
+  /* ------------------------------------------------------------------------
+     2. Mobile Black Header (Crisp White Logo & 44px Touch Targets)
+     ------------------------------------------------------------------------ */
+  .app-header {
+    height: 62px;
+    background-color: #090909;
+    border-bottom: 1px solid #1E201F;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  }
+
+  .header-container {
+    height: 62px;
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .icon-btn {
+    min-width: 44px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hamburger-inner,
+  .hamburger-inner::before,
+  .hamburger-inner::after {
+    background-color: #FFFFFF !important;
+  }
+
+  .logo-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header-logo-img {
+    height: 52px;
+    width: auto;
+    max-width: 165px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+    display: block;
+  }
+
+  .lang-btn {
+    min-height: 44px;
+    min-width: 44px;
+    padding: 6px 14px;
+    background-color: #191B1A;
+    border: 1px solid #323634;
+    color: #FFFFFF;
+    border-radius: var(--radius-full);
+  }
+
+  .lang-btn:hover {
+    background-color: #242826;
+  }
+
+  .lang-indicator {
+    color: #9CA3AF;
+  }
+
+  .lang-indicator.active-lang {
+    color: #FFA4CB;
+    font-weight: 800;
+  }
+
+  .lang-divider {
+    color: #4B5563;
+  }
+
+  /* ------------------------------------------------------------------------
+     3. Mobile Hero (Independent Composition, Auto Height, Wide Useful Text)
+     ------------------------------------------------------------------------ */
+  .hero-section {
+    min-height: 310px;
+    height: auto;
+    max-height: none;
+    padding: 24px 0 26px 0;
+    background-color: #090909;
+    border-bottom: 1px solid #1E201F;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-visual {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 46%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  .hero-cookie-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center right;
+    display: block;
+  }
+
+  .hero-gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    pointer-events: none;
+    background: linear-gradient(
+      to right,
+      #090909 0%,
+      #090909 38%,
+      rgba(9, 9, 9, 0.95) 55%,
+      rgba(9, 9, 9, 0.55) 75%,
+      transparent 100%
+    );
+  }
+
+  .hero-inner-container {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 14px;
+    padding-right: 14px;
+    box-sizing: border-box;
+  }
+
+  .hero-content {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .hero-brand-group {
+    display: block;
+    width: 100%;
+  }
+
+  /* Hide the duplicate giant emblem in mobile hero so text gets full width */
+  .hero-emblem-wrap {
+    display: none !important;
+  }
+
+  .hero-text-block {
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+  }
+
+  .hero-kicker {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: #FFA4CB;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-bottom: 4px;
+  }
+
+  .hero-title {
+    font-family: var(--font-serif);
+    font-size: 1.65rem; /* 26-28px */
+    font-weight: 700;
+    line-height: 1.15;
+    color: #FFFFFF;
+    margin-bottom: 6px;
+    letter-spacing: -0.01em;
+  }
+
+  .hero-subtitle {
+    font-size: 0.88rem; /* 14px */
+    color: #E5E7EB;
+    line-height: 1.35;
+    margin-bottom: 16px;
+  }
+
+  .hero-actions {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .btn-hero {
+    min-height: 44px;
+    padding: 10px 18px;
+    font-size: 0.86rem;
+    font-weight: 700;
+    border-radius: var(--radius-full);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    text-align: center;
+  }
+
+  .btn-hero.btn-primary {
+    background-color: var(--color-fuchsia);
+    color: #FFFFFF;
+  }
+
+  .btn-hero.btn-secondary {
+    background-color: rgba(255, 255, 255, 0.14);
+    color: #FFFFFF;
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+  }
+
+  /* ------------------------------------------------------------------------
+     4. Mobile Specialties Cards
+     ------------------------------------------------------------------------ */
+  .specialties-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    width: 100%;
+    min-width: 0;
+  }
+
+  .specialty-card {
+    border-radius: var(--radius-md);
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .card-img-wrap {
+    height: 170px;
+  }
+
+  .card-body {
+    padding: 16px;
+  }
+
+  .card-title {
+    font-size: 1.25rem;
+    margin-bottom: 4px;
+  }
+
+  .card-text {
+    font-size: 0.88rem;
+    line-height: 1.42;
+    margin-bottom: 12px;
+  }
+
+  /* ------------------------------------------------------------------------
+     5. Mobile Menu Section & DoorDash Item Cards
+     ------------------------------------------------------------------------ */
+  .menu-notice-box {
+    font-size: 0.82rem;
+    padding: 8px 12px;
+    margin-top: 10px;
+    gap: 8px;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .menu-controls {
+    margin-bottom: 18px;
+    width: 100%;
+  }
+
+  .menu-search-wrapper {
+    margin-bottom: 12px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .menu-search-input {
+    min-height: 44px;
+    font-size: 0.88rem;
+    padding: 10px 36px 10px 38px;
+    box-sizing: border-box;
+  }
+
+  .category-tabs-wrapper {
+    width: 100%;
+    max-width: 100%;
+    gap: 6px;
+    padding-bottom: 6px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    box-sizing: border-box;
+  }
+
+  .cat-tab {
+    min-height: 40px;
+    padding: 6px 14px;
+    font-size: 0.84rem;
+    flex-shrink: 0;
+  }
+
+  .menu-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    width: 100%;
+    min-width: 0;
+  }
+
+  .doordash-item-card {
+    padding: 12px;
+    gap: 10px;
+    border-radius: var(--radius-md);
+    width: 100%;
+    box-sizing: border-box;
+    min-width: 0;
+  }
+
+  .menu-card-content {
+    min-width: 0;
+    flex-grow: 1;
+  }
+
+  .menu-card-title {
+    font-size: 0.98rem; /* ~16px */
+    line-height: 1.25;
+    margin-bottom: 2px;
+  }
+
+  .menu-card-desc {
+    font-size: 0.82rem; /* ~13.5px */
+    line-height: 1.35;
+    margin-bottom: 6px;
+    -webkit-line-clamp: 2;
+  }
+
+  .menu-card-footer {
+    gap: 8px;
+    margin-top: 4px;
+    flex-wrap: wrap;
+  }
+
+  .menu-card-price {
+    font-size: 0.88rem;
+    padding: 2px 6px;
+  }
+
+  .menu-card-order-btn {
+    min-height: 38px;
+    padding: 6px 12px;
+    font-size: 0.78rem;
+  }
+
+  /* Consistent 88px Thumbnails & Placeholders */
+  .menu-card-img-wrap {
+    width: 88px;
+    height: 88px;
+    min-width: 88px;
+    min-height: 88px;
+    border-radius: var(--radius-md);
+    flex-shrink: 0;
+  }
+
+  .menu-card-placeholder {
+    padding: 4px 2px;
+    gap: 3px;
+  }
+
+  .placeholder-cam-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .placeholder-text {
+    font-size: 0.62rem;
+    line-height: 1.1;
+  }
+
+  .menu-bottom-cta {
+    padding: 24px 14px;
+    margin-top: 24px;
+    border-radius: var(--radius-lg);
+    box-sizing: border-box;
+  }
+
+  .menu-bottom-cta h3 {
+    font-size: 1.35rem;
+    margin-bottom: 4px;
+  }
+
+  .menu-bottom-cta p {
+    font-size: 0.9rem;
+    margin-bottom: 16px;
+  }
+
+  .menu-cta-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .menu-cta-actions .btn {
+    width: 100%;
+    min-height: 44px;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+
+  /* ------------------------------------------------------------------------
+     6. Mobile Gallery
+     ------------------------------------------------------------------------ */
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    width: 100%;
+  }
+
+  .gallery-item-btn {
+    min-height: 44px;
+    border-radius: var(--radius-md);
+  }
+
+  /* ------------------------------------------------------------------------
+     7. Mobile Story Section (Nuestra Historia)
+     ------------------------------------------------------------------------ */
+  .story-container {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    width: 100%;
+    min-width: 0;
+  }
+
+  .story-paragraph {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+
+  .story-highlights {
+    gap: 10px;
+    margin-top: 14px;
+    width: 100%;
+  }
+
+  .highlight-item {
+    padding: 10px 12px;
+    gap: 10px;
+    border-radius: var(--radius-md);
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .highlight-icon {
+    font-size: 1.3rem;
+  }
+
+  .highlight-item strong {
+    font-size: 0.92rem;
+  }
+
+  .highlight-item p {
+    font-size: 0.82rem;
+  }
+
+  .story-visual-grid {
+    gap: 12px;
+    width: 100%;
+  }
+
+  .story-image-card {
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .story-img-owner {
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    object-position: center 15%;
+  }
+
+  .story-img-store {
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .story-img-badge {
+    font-size: 0.72rem;
+    padding: 3px 10px;
+    bottom: 8px;
+    left: 8px;
+  }
+
+  /* ------------------------------------------------------------------------
+     8. Mobile Location & Contact Section
+     ------------------------------------------------------------------------ */
+  .location-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    width: 100%;
+    min-width: 0;
+  }
+
+  .location-photo-card {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .location-info-card {
+    padding: 18px 14px;
+    gap: 16px;
+    border-radius: var(--radius-lg);
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .info-block {
+    gap: 12px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .info-icon {
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+  }
+
+  .info-heading {
+    font-size: 1.05rem;
+  }
+
+  .info-value {
+    font-size: 0.88rem;
+    line-height: 1.45;
+    word-break: break-word;
+  }
+
+  .hours-list {
+    width: 100%;
+  }
+
+  .hours-list li {
+    font-size: 0.85rem;
+    padding: 4px 0;
+  }
+
+  .social-buttons-wrap {
+    gap: 8px;
+  }
+
+  .social-buttons-wrap .btn {
+    min-height: 40px;
+    padding: 8px 14px;
+    font-size: 0.82rem;
+  }
+
+  .location-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .location-actions .btn {
+    width: 100%;
+    min-height: 44px;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+
+  /* ------------------------------------------------------------------------
+     9. Mobile Footer
+     ------------------------------------------------------------------------ */
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding-top: 32px;
+    padding-bottom: 24px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .footer-brand {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .footer-logo-img {
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+  }
+
+  .footer-bottom-flex {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  /* ------------------------------------------------------------------------
+     10. Mobile Bottom Action Bar (App-Style)
+     ------------------------------------------------------------------------ */
+  .mobile-bottom-bar {
+    height: calc(var(--bottom-bar-height) + env(safe-area-inset-bottom, 0px));
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+    background-color: rgba(255, 255, 255, 0.98);
+    border-top: 1px solid var(--color-border);
+  }
+
+  .bottom-action-btn {
+    min-height: 48px;
+    min-width: 60px;
+    padding: 4px 8px;
+    font-size: 0.72rem;
+  }
+
+}
