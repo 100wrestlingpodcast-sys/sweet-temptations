@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow">
+  <title>JB Sweet Temptations | Coffee • Bakery • Cake Design | Magnolia, TX</title>
+  <meta name="description" content="JB Sweet Temptations en Magnolia, Texas. Café, repostería fresca y diseño de bizcochos para tus momentos especiales.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Skip link for accessibility -->
+  <a href="#main-content" class="skip-link" data-i18n="skip_to_content">Saltar al contenido principal</a>
+
+  <!-- Top App-Style Header -->
+  <header class="app-header" role="banner">
+    <div class="header-container">
+      <button id="menu-toggle-btn" class="icon-btn" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="side-nav">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+
+      <a href="#home" class="logo-link" aria-label="JB Sweet Temptations - Inicio">
+        <img src="assets/logo-transparent-outline.png" alt="Logo de JB Sweet Temptations" class="header-logo-img" width="120" height="38">
+      </a>
+
+      <div class="header-actions">
+        <button id="lang-toggle-btn" class="lang-btn" aria-label="Cambiar a inglés">
+          <span class="lang-indicator active-lang" data-lang="es">ES</span>
+          <span class="lang-divider">|</span>
+          <span class="lang-indicator" data-lang="en">EN</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Side Navigation Drawer -->
+  <div id="nav-overlay" class="nav-overlay" aria-hidden="true"></div>
+  <aside id="side-nav" class="side-nav" aria-label="Navegación principal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="side-nav-header">
+      <div class="nav-brand-title">JB Sweet Temptations</div>
+      <button id="nav-close-btn" class="icon-btn close-btn" aria-label="Cerrar menú">
+        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    
+    <nav class="side-nav-links">
+      <a href="#home" class="nav-link active" data-i18n="nav_home">Inicio</a>
+      <a href="#specialties" class="nav-link" data-i18n="nav_specialties">Especialidades</a>
+      <a href="#menu" class="nav-link" data-i18n="nav_menu">Menú de comida</a>
+      <a href="#gallery" class="nav-link" data-i18n="nav_gallery">Galería</a>
+      <a href="#story" class="nav-link" data-i18n="nav_story">Nuestra historia</a>
+      <a href="#location" class="nav-link" data-i18n="nav_location">Ubicación y horarios</a>
+    </nav>
+
+    <div class="side-nav-footer">
+      <a href="https://www.doordash.com/store/jb-sweet-temptations-magnolia-51904045/" target="_blank" rel="noopener noreferrer" class="btn btn-doordash btn-block" aria-label="Ordenar en DoorDash (abre en nueva ventana)">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M22.04 8.7c-.3-.49-.78-.7-1.34-.7H7.72c-.85 0-1.57.55-1.78 1.37L4.06 17.1c-.24.96.48 1.9 1.48 1.9h12.98c.85 0 1.57-.55 1.78-1.37l1.88-7.73c.1-.4.04-.8-.14-1.2z"/></svg>
+        <span data-i18n="cta_doordash">Ordenar en DoorDash</span>
+      </a>
+      <a href="tel:+12817589186" class="btn btn-primary btn-block">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24 11.72 11.72 0 003.68.59 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.72 11.72 0 00.59 3.68 1 1 0 01-.24 1.02l-2.23 2.09z"/></svg>
+        <span data-i18n="cta_call">Llamar para ordenar</span>
+      </a>
+      <a href="https://www.google.com/maps/dir/?api=1&destination=126%20Roy%20St%20Suite%20C%2C%20Magnolia%2C%20TX%2077354" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-block">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+        <span data-i18n="cta_directions">Cómo llegar</span>
+      </a>
+      <div class="nav-contact-quick">
+        <p><strong>126 Roy St, Suite C</strong><br>Magnolia, TX 77354</p>
+        <p>(281) 758-9186</p>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    
+    <!-- Hero Section: Black to Pink gradient transition, large white emblem, compact layout -->
+    <section id="home" class="hero-section">
+      <!-- Right Visual: Croissants, cookies and drinks dessert board anchored to viewport right edge -->
+      <div class="hero-visual">
+        <div class="hero-gradient-overlay" aria-hidden="true"></div>
+        <img src="assets/hero-dessert.avif" alt="Variedad de croissants, galletas y bebidas en JB Sweet Temptations" class="hero-cookie-img" width="1000" height="300" fetchpriority="high">
+      </div>
+
+      <div class="container hero-inner-container">
+        <!-- Left Content: Prominent White Emblem + Crisp Text on Black background -->
+        <div class="hero-content">
+          <div class="hero-brand-group">
+            <div class="hero-emblem-wrap">
+              <img src="assets/logo-transparent-outline.png" alt="Logo de JB Sweet Temptations" class="hero-logo-emblem" width="180" height="180">
+            </div>
+            <div class="hero-text-block">
+              <span class="hero-kicker" data-i18n="hero_pill">Coffee • Bakery • Cake Design</span>
+              <h1 class="hero-title" data-i18n="hero_title">La vida es más dulce aquí.</h1>
+              <p class="hero-subtitle" data-i18n="hero_subtitle">Café, repostería y galletas artesanales en Magnolia.</p>
+              
+              <div class="hero-actions">
+                <a href="#menu" class="btn btn-primary btn-hero">
+                  <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/></svg>
+                  <span data-i18n="cta_explore_menu">Ver menú</span>
+                </a>
+                <a href="tel:+12817589186" class="btn btn-hero-outline btn-hero">
+                  <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24 11.72 11.72 0 003.68.59 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.72 11.72 0 00.59 3.68 1 1 0 01-.24 1.02l-2.23 2.09z"/></svg>
+                  <span data-i18n="cta_call_short">Llamar</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Specialties Section -->
+    <section id="specialties" class="specialties-section section-padding">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-kicker" data-i18n="spec_kicker">Nuestras especialidades</span>
+          <h2 class="section-title" data-i18n="spec_title">Pasión en cada bocado</h2>
+          <p class="section-intro" data-i18n="spec_intro">Descubre nuestras creaciones artesanales preparadas a diario con los mejores ingredientes.</p>
+        </div>
+
+        <div class="specialties-grid">
+          <!-- Card 1: Coffee & Breakfast -->
+          <article class="specialty-card">
+            <div class="card-img-wrap">
+              <img src="assets/802457471_1787510039614641_2829147288766330794_n.jpg" alt="Café latte recién preparado con delicioso croissant caliente" class="card-img" width="500" height="400" loading="lazy">
+              <span class="card-tag" data-i18n="spec_tag_coffee">Café & Desayuno</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title" data-i18n="spec_title_coffee">Café y desayunos</h3>
+              <p class="card-text" data-i18n="spec_desc_coffee">Espresso aromático, café helado especial, lattes, avena fresca, pan sobao y croissants horneados.</p>
+              <a href="#menu" class="card-link" data-i18n="spec_link_coffee">Ver opciones de café →</a>
+            </div>
+          </article>
+
+          <!-- Card 2: Custom Cakes -->
+          <article class="specialty-card">
+            <div class="card-img-wrap">
+              <img src="assets/795385925_1800503994981912_1501729458452053321_n.jpg" alt="Bizcocho artesanal con elegante decoración y cobertura verde texturizada" class="card-img" width="500" height="400" loading="lazy">
+              <span class="card-tag" data-i18n="spec_tag_cakes">Cake Design</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title" data-i18n="spec_title_cakes">Bizcochos y diseño</h3>
+              <p class="card-text" data-i18n="spec_desc_cakes">Diseños personalizados para cumpleaños, bodas y ocasiones especiales, elaborados con técnica y detalle.</p>
+              <a href="tel:+12817589186" class="card-link" data-i18n="spec_link_cakes">Consultar pedidos especiales →</a>
+            </div>
+          </article>
+
+          <!-- Card 3: Cookies & Pastries -->
+          <article class="specialty-card">
+            <div class="card-img-wrap">
+              <img src="assets/794484928_1800491691649809_759161568872566410_n.jpg" alt="Galleta artesanal horneada con textura suave y chispas" class="card-img" width="500" height="400" loading="lazy">
+              <span class="card-tag" data-i18n="spec_tag_pastries">Repostería</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title" data-i18n="spec_title_pastries">Galletas y repostería</h3>
+              <p class="card-text" data-i18n="spec_desc_pastries">Galletas estilo gourmet, quesitos, pastelillos de guayaba y postres en vasito llenos de sabor.</p>
+              <a href="#menu" class="card-link" data-i18n="spec_link_pastries">Ver dulces y postres →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Complete Menu Section -->
+    <section id="menu" class="menu-section section-padding">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-kicker" data-i18n="menu_kicker">Menú informativo</span>
+          <h2 class="section-title" data-i18n="menu_title">Nuestra Carta Completa</h2>
+          <p class="section-intro" data-i18n="menu_intro">Explora todas nuestras opciones. Llámanos para confirmar disponibilidad diaria y realizar tu pedido.</p>
+          
+          <div class="menu-notice-box" role="note">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+            <span id="menu-disclaimer-text" data-i18n="menu_notice">Precios de referencia del menú online. Confirma precios y disponibilidad llamando al negocio.</span>
+          </div>
+        </div>
+
+        <!-- Menu Filter Controls -->
+        <div class="menu-controls">
+          <div class="menu-search-wrapper">
+            <svg class="search-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            <input type="search" id="menu-search-input" class="menu-search-input" placeholder="Buscar producto (ej. latte, waffle, quesito)..." aria-label="Buscar en el menú">
+            <button id="clear-search-btn" class="clear-search-btn" aria-label="Limpiar búsqueda" style="display: none;">&times;</button>
+          </div>
+
+          <div class="category-tabs-wrapper" role="tablist" aria-label="Categorías del menú" id="category-tabs-container">
+            <!-- Dynamically populated / server-rendered tabs -->
+            <button class="cat-tab active" role="tab" aria-selected="true" data-category="all" data-i18n="cat_all">Todos</button>
+          </div>
+        </div>
+
+        <!-- Menu Items Grid Container -->
+        <div id="menu-items-container" class="menu-grid">
+          <!-- Populated by JavaScript from menu data -->
+        </div>
+
+        <!-- Empty search state -->
+        <div id="menu-empty-state" class="menu-empty-state" style="display: none;">
+          <p class="empty-title" data-i18n="menu_empty_title">No se encontraron productos</p>
+          <p class="empty-desc" data-i18n="menu_empty_desc">Intenta buscar con otra palabra o selecciona otra categoría.</p>
+        </div>
+
+        <!-- Menu CTA Box with Call & DoorDash -->
+        <div class="menu-bottom-cta">
+          <h3 data-i18n="menu_cta_heading">¿Listo para hacer tu pedido?</h3>
+          <p data-i18n="menu_cta_subheading">Llámanos directamente o pide tus favoritos a domicilio.</p>
+          <div class="menu-cta-actions">
+            <a href="tel:+12817589186" class="btn btn-primary btn-large">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24 11.72 11.72 0 003.68.59 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.72 11.72 0 00.59 3.68 1 1 0 01-.24 1.02l-2.23 2.09z"/></svg>
+              <span data-i18n="cta_call">Llamar para ordenar (281) 758-9186</span>
+            </a>
+            <a href="https://www.doordash.com/store/jb-sweet-temptations-magnolia-51904045/" target="_blank" rel="noopener noreferrer" class="btn btn-doordash btn-large" aria-label="Ordenar en DoorDash (abre en nueva ventana)">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M22.04 8.7c-.3-.49-.78-.7-1.34-.7H7.72c-.85 0-1.57.55-1.78 1.37L4.06 17.1c-.24.96.48 1.9 1.48 1.9h12.98c.85 0 1.57-.55 1.78-1.37l1.88-7.73c.1-.4.04-.8-.14-1.2z"/></svg>
+              <span data-i18n="cta_doordash">Ordenar en DoorDash</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section section-padding">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-kicker" data-i18n="gallery_kicker">Galería visual</span>
+          <h2 class="section-title" data-i18n="gallery_title">Momentos y Dulces Creaciones</h2>
+          <p class="section-intro" data-i18n="gallery_intro">Una mirada a nuestro espacio, bizcochos y favoritos de la casa en Magnolia.</p>
+        </div>
+
+        <div class="gallery-grid" id="gallery-grid">
+          <!-- Gallery Item 1: Bizcocho Rosa -->
+          <button class="gallery-item-btn" data-img="assets/802002945_1787514172947561_8124437263232924631_n.jpg" data-alt-es="Bizcocho decorado con tonos rosa y crema para celebración" data-alt-en="Pink and cream decorated celebration cake" data-caption-es="Bizcocho artesanal decorado en tonos rosa y blanco." data-caption-en="Handcrafted celebration cake in pink and white tones.">
+            <img src="assets/802002945_1787514172947561_8124437263232924631_n.jpg" alt="Bizcocho decorado con tonos rosa y crema para celebración" class="gallery-thumb" width="400" height="400" loading="lazy">
+            <span class="gallery-hover-overlay">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+            </span>
+          </button>
+
+          <!-- Gallery Item 2: Birthday Cake Cookie Announcement -->
+          <button class="gallery-item-btn" data-img="assets/796355415_1800491688316476_6052885699826384766_n.jpg" data-alt-es="Anuncio de la galleta Birthday Cake Cookie con chispas de colores" data-alt-en="Birthday Cake Cookie announcement with sprinkles" data-caption-es="Birthday Cake Cookie: Galleta suave horneada con chispas festivas." data-caption-en="Birthday Cake Cookie: Soft-baked cookie with festive sprinkles.">
+            <img src="assets/796355415_1800491688316476_6052885699826384766_n.jpg" alt="Anuncio de la galleta Birthday Cake Cookie" class="gallery-thumb" width="400" height="400" loading="lazy">
+            <span class="gallery-hover-overlay">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+            </span>
+          </button>
+
+          <!-- Gallery Item 3: Bizcocho Empacado -->
+          <button class="gallery-item-btn" data-img="assets/797007150_1800503981648580_3422256932092805356_n.jpg" data-alt-es="Bizcocho artesanal listo y empacado para entrega" data-alt-en="Artisanal cake packaged ready for pickup" data-caption-es="Bizcocho listo con empaque protector para eventos y órdenes especiales." data-caption-en="Cake safely boxed and packaged for pickup and celebrations.">
+            <img src="assets/797007150_1800503981648580_3422256932092805356_n.jpg" alt="Bizcocho artesanal listo y empacado" class="gallery-thumb" width="400" height="400" loading="lazy">
+            <span class="gallery-hover-overlay">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+            </span>
+          </button>
+
+          <!-- Gallery Item 4: Desayuno Boricua / Pan sobao, avena y café -->
+          <button class="gallery-item-btn" data-img="assets/802459150_1788534006178911_6926317453327347871_n.jpg" data-alt-es="Desayuno completo con avena cremosa, pan sobao tostado y taza de café caliente" data-alt-en="Breakfast spread with warm oatmeal, pan sobao bread and hot coffee" data-caption-es="Desayuno tradicional: Avena calientita, pan sobao y café recién colado." data-caption-en="Traditional breakfast: Warm oatmeal, pan sobao, and freshly brewed coffee.">
+            <img src="assets/802459150_1788534006178911_6926317453327347871_n.jpg" alt="Desayuno con avena, pan sobao y café" class="gallery-thumb" width="400" height="400" loading="lazy">
+            <span class="gallery-hover-overlay">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+            </span>
+          </button>
+
+          <!-- Gallery Item 5: Interior del local -->
+          <button class="gallery-item-btn" data-img="assets/800001221_1786452166387095_2136119658881553182_n.jpg" data-alt-es="Interior acogedor de JB Sweet Temptations con paredes en tonos rosa y mesas" data-alt-en="Cozy interior of JB Sweet Temptations with pink walls and dining tables" data-caption-es="Nuestro salón en Magnolia: Un ambiente cálido, dulce y relajante." data-caption-en="Our dining room in Magnolia: Warm, charming, and inviting.">
+            <img src="assets/800001221_1786452166387095_2136119658881553182_n.jpg" alt="Interior acogedor de la cafetería" class="gallery-thumb" width="400" height="400" loading="lazy">
+            <span class="gallery-hover-overlay">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+            </span>
+          </button>
+
+          <!-- Gallery Item 6: Bizcocho verde texturizado -->
+          <button class="gallery-item-btn" data-img="assets/795385925_1800503994981912_1501729458452053321_n.jpg" data-alt-es="Bizcocho verde decorado con flores y detalle de glaseado" data-alt-en="Green decorated cake with floral accents and textured frosting" data-caption-es="Diseño exclusivo de bizcocho personalizado." data-caption-en="Custom cake design handcrafted with precision.">
+            <img src="assets/795385925_1800503994981912_1501729458452053321_n.jpg" alt="Bizcocho decorado verde" class="gallery-thumb" width="400" height="400" loading="lazy">
+            <span class="gallery-hover-overlay">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+            </span>
+          </button>
+
+          <!-- Gallery Item 7: Rótulo exterior -->
+          <button class="gallery-item-btn" data-img="assets/558247114_1475533207478994_5316422531804397070_n.jpg" data-alt-es="Rótulo exterior de JB Sweet Temptations en Magnolia" data-alt-en="Outdoor storefront sign of JB Sweet Temptations" data-caption-es="Rótulo de entrada en 126 Roy St, Suite C." data-caption-en="Storefront sign at 126 Roy St, Suite C.">
+            <img src="assets/558247114_1475533207478994_5316422531804397070_n.jpg" alt="Rótulo exterior del local" class="gallery-thumb" width="400" height="400" loading="lazy">
+            <span class="gallery-hover-overlay">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+            </span>
+          </button>
+
+          <!-- Gallery Item 8: Corte de Cinta / Apertura -->
+          <button class="gallery-item-btn" data-img="assets/797962117_1784470283251950_2218267205885328154_n.jpg" data-alt-es="Celebración comunitaria de inauguración y corte de cinta" data-alt-en="Grand opening ribbon-cutting community celebration" data-caption-es="Momento especial de inauguración junto a la comunidad de Magnolia." data-caption-en="Grand opening ribbon-cutting ceremony with the Magnolia community.">
+            <img src="assets/797962117_1784470283251950_2218267205885328154_n.jpg" alt="Corte de cinta en la apertura" class="gallery-thumb" width="400" height="400" loading="lazy">
+            <span class="gallery-hover-overlay">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+            </span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox-modal" class="lightbox-modal" role="dialog" aria-modal="true" aria-label="Visor de fotografía" aria-hidden="true">
+      <div class="lightbox-backdrop" id="lightbox-backdrop"></div>
+      <div class="lightbox-content">
+        <button id="lightbox-close-btn" class="lightbox-btn close" aria-label="Cerrar ampliación">&times;</button>
+        <button id="lightbox-prev-btn" class="lightbox-btn prev" aria-label="Foto anterior">&#10094;</button>
+        <button id="lightbox-next-btn" class="lightbox-btn next" aria-label="Foto siguiente">&#10095;</button>
+        
+        <div class="lightbox-image-box">
+          <img id="lightbox-img" src="" alt="" class="lightbox-img">
+        </div>
+        <div class="lightbox-caption" id="lightbox-caption"></div>
+      </div>
+    </div>
+
+    <!-- Story / About Section -->
+    <section id="story" class="story-section section-padding">
+      <div class="container story-container">
+        <div class="story-text">
+          <span class="section-kicker" data-i18n="story_kicker">Nuestra historia</span>
+          <h2 class="section-title" data-i18n="story_title">Dulzura, Café y Pasión</h2>
+          <p class="story-paragraph" data-i18n="story_p1">JB Sweet Temptations reúne café, repostería y diseño de bizcochos en Magnolia.</p>
+          <p class="story-paragraph" data-i18n="story_p2">Cada mañana preparamos con esmero café de especialidad, desayunos reconfortantes y postres artesanales para compartir alegría con nuestros vecinos y visitantes.</p>
+          <p class="story-paragraph" data-i18n="story_p3">Ya sea que busques tu café favorito del día, un antojo dulce, un bizcocho personalizado para una fecha inolvidable o tu pan sobao al estilo de Puerto Rico, aquí siempre te esperamos con una sonrisa.</p>
+          
+          <div class="story-highlights">
+            <div class="highlight-item">
+              <span class="highlight-icon">☕</span>
+              <div>
+                <strong data-i18n="story_h1_t">Café de calidad</strong>
+                <p data-i18n="story_h1_d">Espresso, lattes y especialidades frías.</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">🎂</span>
+              <div>
+                <strong data-i18n="story_h2_t">Bizcochos a medida</strong>
+                <p data-i18n="story_h2_d">Diseño artesanal para tus celebraciones.</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">🥐</span>
+              <div>
+                <strong data-i18n="story_h3_t">Repostería fresca</strong>
+                <p data-i18n="story_h3_d">Croissants, quesitos, waffles y postres.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="story-visual">
+          <div class="story-visual-grid">
+            <figure class="story-image-card story-card-owner">
+              <img src="assets/owner-studio.png" alt="Retrato de la dueña de JB Sweet Temptations con delantal negro y bandeja de repostería artesanal" data-alt-i18n="story_img1_alt" class="story-img story-img-owner" width="768" height="512" loading="lazy">
+              <figcaption class="story-img-badge" data-i18n="story_img1_badge">Hecho con pasión artesanal</figcaption>
+            </figure>
+            <figure class="story-image-card story-card-store">
+              <img src="assets/800001221_1786452166387095_2136119658881553182_n.jpg" alt="Interior acogedor y decorado de JB Sweet Temptations en Magnolia" data-alt-i18n="story_img2_alt" class="story-img story-img-store" width="600" height="450" loading="lazy">
+              <figcaption class="story-img-badge" data-i18n="story_img2_badge">Nuestro salón en Magnolia</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location & Hours Section -->
+    <section id="location" class="location-section section-padding">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-kicker" data-i18n="loc_kicker">Visítanos</span>
+          <h2 class="section-title" data-i18n="loc_title">Ubicación y Horarios</h2>
+          <p class="section-intro" data-i18n="loc_intro">Estamos en el corazón de Magnolia, Texas. Pasa a disfrutar en nuestro salón o pide para llevar.</p>
+        </div>
+
+        <div class="location-grid">
+          <!-- Storefront Photo Card -->
+          <div class="location-photo-card">
+            <img src="assets/806176914_1789552409410404_8494141078597211720_n.jpg" alt="Fachada exterior de JB Sweet Temptations en 126 Roy St Suite C, Magnolia TX" class="location-img" width="600" height="450" loading="lazy">
+            <div class="location-photo-badge">
+              <span data-i18n="loc_badge">126 Roy St, Suite C</span>
+            </div>
+          </div>
+
+          <!-- Contact & Hours Details -->
+          <div class="location-info-card">
+            
+            <!-- Address box -->
+            <div class="info-block">
+              <div class="info-icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+              </div>
+              <div>
+                <h3 class="info-heading" data-i18n="loc_addr_heading">Dirección</h3>
+                <p class="info-value">
+                  126 Roy St, Suite C<br>
+                  Magnolia, TX 77354, USA
+                </p>
+                <a href="https://www.google.com/maps/dir/?api=1&destination=126%20Roy%20St%20Suite%20C%2C%20Magnolia%2C%20TX%2077354" target="_blank" rel="noopener noreferrer" class="text-link" data-i18n="loc_open_maps">
+                  Abrir indicaciones en Google Maps →
+                </a>
+              </div>
+            </div>
+
+            <!-- Hours box -->
+            <div class="info-block">
+              <div class="info-icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+              </div>
+              <div class="hours-details-wrap">
+                <h3 class="info-heading" data-i18n="loc_hours_heading">Horarios de atención</h3>
+                <ul class="hours-list">
+                  <li>
+                    <span class="day" data-i18n="day_mon_fri">Lunes a Viernes</span>
+                    <span class="time" data-i18n="time_mon_fri">7:00 a. m. – 4:00 p. m.</span>
+                  </li>
+                  <li>
+                    <span class="day" data-i18n="day_sat">Sábado</span>
+                    <span class="time" data-i18n="time_sat">8:00 a. m. – 6:00 p. m.</span>
+                  </li>
+                  <li>
+                    <span class="day" data-i18n="day_sun">Domingo</span>
+                    <span class="time" data-i18n="time_sun">8:00 a. m. – 2:00 p. m.</span>
+                  </li>
+                </ul>
+                <div class="hours-timezone-note" data-i18n="loc_tz_note">Zona horaria local: America/Chicago (Magnolia, TX)</div>
+              </div>
+            </div>
+
+            <!-- Direct Contact box -->
+            <div class="info-block">
+              <div class="info-icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              </div>
+              <div>
+                <h3 class="info-heading" data-i18n="loc_contact_heading">Contacto directo</h3>
+                <p class="info-value">
+                  <strong>Teléfono:</strong> <a href="tel:+12817589186" class="contact-link">(281) 758-9186</a><br>
+                  <strong>Correo:</strong> <a href="mailto:jbsweettemptations.bv@gmail.com" class="contact-link">jbsweettemptations.bv@gmail.com</a>
+                </p>
+              </div>
+            </div>
+
+            <!-- Social / Instagram & Facebook box -->
+            <div class="info-block">
+              <div class="info-icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              </div>
+              <div>
+                <h3 class="info-heading" data-i18n="loc_social_heading">Redes sociales</h3>
+                <div class="social-buttons-wrap">
+                  <a href="https://www.instagram.com/jb_sweet_temptations/" target="_blank" rel="noopener noreferrer" class="btn btn-instagram" aria-label="Instagram @jb_sweet_temptations (abre en nueva ventana)">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                    <span>Instagram</span>
+                  </a>
+                  <a href="https://www.facebook.com/profile.php?id=100050669865718" target="_blank" rel="noopener noreferrer" class="btn btn-facebook" aria-label="Facebook JB Sweet Temptations LLC (abre en nueva ventana)">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95C18.05 21.45 22 17.19 22 12z"/></svg>
+                    <span>Facebook</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Action buttons inside location card -->
+            <div class="location-actions">
+              <a href="tel:+12817589186" class="btn btn-primary">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24 11.72 11.72 0 003.68.59 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.72 11.72 0 00.59 3.68 1 1 0 01-.24 1.02l-2.23 2.09z"/></svg>
+                <span data-i18n="cta_call">Llamar (281) 758-9186</span>
+              </a>
+              <a href="https://www.google.com/maps/dir/?api=1&destination=126%20Roy%20St%20Suite%20C%2C%20Magnolia%2C%20TX%2077354" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+                <span data-i18n="cta_directions">Cómo llegar</span>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="app-footer" role="contentinfo">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <img src="assets/logo-transparent-outline.png" alt="JB Sweet Temptations Logo" class="footer-logo-img" width="85" height="85">
+        <div>
+          <h4 class="footer-title">JB Sweet Temptations</h4>
+          <p class="footer-subtitle">Coffee • Bakery • Cake Design</p>
+          <p class="footer-address">126 Roy St, Suite C, Magnolia, TX 77354</p>
+        </div>
+      </div>
+
+      <div class="footer-nav">
+        <h5 class="footer-heading" data-i18n="footer_links_title">Navegación</h5>
+        <ul>
+          <li><a href="#home" data-i18n="nav_home">Inicio</a></li>
+          <li><a href="#specialties" data-i18n="nav_specialties">Especialidades</a></li>
+          <li><a href="#menu" data-i18n="nav_menu">Menú de comida</a></li>
+          <li><a href="#gallery" data-i18n="nav_gallery">Galería</a></li>
+          <li><a href="#story" data-i18n="nav_story">Nuestra historia</a></li>
+          <li><a href="#location" data-i18n="nav_location">Ubicación</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h5 class="footer-heading" data-i18n="footer_contact_title">Contacto</h5>
+        <p><a href="tel:+12817589186">(281) 758-9186</a></p>
+        <p><a href="mailto:jbsweettemptations.bv@gmail.com">jbsweettemptations.bv@gmail.com</a></p>
+        <p><a href="https://www.instagram.com/jb_sweet_temptations/" target="_blank" rel="noopener noreferrer">Instagram: @jb_sweet_temptations</a></p>
+        <p><a href="https://www.facebook.com/profile.php?id=100050669865718" target="_blank" rel="noopener noreferrer">Facebook: JB Sweet Temptations LLC</a></p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-flex">
+        <p>&copy; <span id="current-year">2026</span> JB Sweet Temptations. <span data-i18n="footer_rights">Todos los derechos reservados.</span></p>
+        <p class="pilot-note" data-i18n="footer_pilot_note">Versión piloto de presentación comercial.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Fixed Mobile Bottom Action Bar (App Style) -->
+  <nav class="mobile-bottom-bar" aria-label="Acciones rápidas móviles">
+    <a href="tel:+12817589186" class="bottom-action-btn call-action">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24 11.72 11.72 0 003.68.59 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.72 11.72 0 00.59 3.68 1 1 0 01-.24 1.02l-2.23 2.09z"/></svg>
+      <span data-i18n="bar_call">Llamar</span>
+    </a>
+    <a href="#menu" class="bottom-action-btn">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/></svg>
+      <span data-i18n="bar_menu">Menú</span>
+    </a>
+    <a href="https://www.google.com/maps/dir/?api=1&destination=126%20Roy%20St%20Suite%20C%2C%20Magnolia%2C%20TX%2077354" target="_blank" rel="noopener noreferrer" class="bottom-action-btn">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+      <span data-i18n="bar_directions">Cómo llegar</span>
+    </a>
+    <a href="https://www.facebook.com/profile.php?id=100050669865718" target="_blank" rel="noopener noreferrer" class="bottom-action-btn">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95C18.05 21.45 22 17.19 22 12z"/></svg>
+      <span>Facebook</span>
+    </a>
+  </nav>
+
+  <!-- JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>

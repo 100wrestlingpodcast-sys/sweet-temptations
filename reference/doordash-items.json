@@ -1,0 +1,560 @@
+[
+  {
+    "id": "44648629373",
+    "name": "Nutella & Strawberry Waffle",
+    "description": "",
+    "displayPrice": "$$12.95",
+    "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photosV2/1c7908c9-1a58-4131-a5c8-d5c8194137da-retina-large.jpg",
+    "category": "Most Ordered",
+    "localImage": "assets/menu/44648629373.jpg"
+  },
+  {
+    "id": "44678383043",
+    "name": "Banana & Nutella Waffle",
+    "description": "",
+    "displayPrice": "$$12.00",
+    "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photosV2/3cc72654-f320-411a-919c-afca3fab4d0d-retina-large.jpg",
+    "category": "Most Ordered",
+    "localImage": "assets/menu/44678383043.jpg"
+  },
+  {
+    "id": "44648423601",
+    "name": "Sunrise Croissant",
+    "description": "",
+    "displayPrice": "$$8.95",
+    "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photosV2/96f643d1-9afb-47b0-a48e-e2701bf712b5-retina-large.jpg",
+    "category": "Most Ordered",
+    "localImage": "assets/menu/44648423601.jpg"
+  },
+  {
+    "id": "44648632375",
+    "name": "Tiramisu (Square)",
+    "description": "",
+    "displayPrice": "$$8.50",
+    "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photosV2/0f5da7ec-4f14-4db9-a661-8fa089ade1c5-retina-large.jpg",
+    "category": "Most Ordered",
+    "localImage": "assets/menu/44648632375.jpg"
+  },
+  {
+    "id": "44678790525",
+    "name": "Tiramisú Waffle",
+    "description": "",
+    "displayPrice": "$$13.95",
+    "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photosV2/94b961d2-2172-402e-b092-404e2627c39a-retina-large.jpg",
+    "category": "Most Ordered",
+    "localImage": "assets/menu/44678790525.jpg"
+  },
+  {
+    "id": "44648630877",
+    "name": "Guava Milkshake",
+    "description": "",
+    "displayPrice": "$$10.95",
+    "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photosV2/11fc7dad-a445-4ad4-8293-7f42725172be-retina-large.jpg",
+    "category": "Most Ordered",
+    "localImage": "assets/menu/44648630877.jpg"
+  },
+  {
+    "id": "44648630873",
+    "name": "Oreo Milkshake",
+    "description": "",
+    "displayPrice": "$$10.95",
+    "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photosV2/6dc2f0ef-185c-4f93-8d90-6108d5f83e3a-retina-large.jpg",
+    "category": "Most Ordered",
+    "localImage": "assets/menu/44648630873.jpg"
+  },
+  {
+    "id": "44648629375",
+    "name": "JB Parfait",
+    "description": "Greek yogurt, granola, banana, strawberry, almonds & honey",
+    "displayPrice": "$$10.95",
+    "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photosV2/bd619bda-cc4b-45a5-815e-b87951890d6f-retina-large.jpg",
+    "category": "Most Ordered",
+    "localImage": "assets/menu/44648629375.jpg"
+  },
+  {
+    "id": "44678790524",
+    "name": "Nutella Waffle",
+    "description": "",
+    "displayPrice": "$$10.50",
+    "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photosV2/c9609c00-758c-46d1-834d-1ffdfabc72c3-retina-large.jpg",
+    "category": "Most Ordered",
+    "localImage": "assets/menu/44678790524.jpg"
+  },
+  {
+    "id": "44678383045",
+    "name": "Dulce de Leche Waffle",
+    "description": "",
+    "displayPrice": "$$10.50",
+    "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photosV2/24166f94-c4b4-442f-9147-ec2c723fa894-retina-large.jpg",
+    "category": "Most Ordered",
+    "localImage": "assets/menu/44678383045.jpg"
+  },
+  {
+    "id": "44678790526",
+    "name": "Plain Waffle",
+    "description": "",
+    "displayPrice": "$$8.95",
+    "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photosV2/091da695-43ea-46a1-b893-d3ee5932d166-retina-large.jpg",
+    "category": "Most Ordered",
+    "localImage": "assets/menu/44678790526.jpg"
+  },
+  {
+    "id": "44678790461",
+    "name": "Tiramisú Iced Coffee",
+    "description": "Chilled coffee inspired by classic Italian dessert tiramisú. Available in 12 oz or 16 oz sizes.",
+    "displayPrice": "$$7.25+",
+    "imageUrl": "",
+    "category": "Most Ordered",
+    "localImage": null
+  },
+  {
+    "id": "44678790574",
+    "name": "Coca Cola",
+    "description": "",
+    "displayPrice": "$$3.25",
+    "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photosV2/e38cca70-9d31-404d-b7c1-234c7ee3abcf-retina-large.jpg",
+    "category": "Bottled Drinks ",
+    "localImage": "assets/menu/44678790574.jpg"
+  },
+  {
+    "id": "44678383337",
+    "name": "Sprite",
+    "description": "",
+    "displayPrice": "$$3.25",
+    "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photosV2/41782a54-8a3a-413e-aec9-56b4141c953b-retina-large.jpg",
+    "category": "Bottled Drinks ",
+    "localImage": "assets/menu/44678383337.jpg"
+  },
+  {
+    "id": "44678790577",
+    "name": "Perrier",
+    "description": "",
+    "displayPrice": "$$3.25",
+    "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photosV2/abce68cf-cc69-45fc-96f7-e878d4d1dc83-retina-large.jpg",
+    "category": "Bottled Drinks ",
+    "localImage": "assets/menu/44678790577.jpg"
+  },
+  {
+    "id": "44678790578",
+    "name": "Orange Drink",
+    "description": "",
+    "displayPrice": "$$4.95",
+    "imageUrl": "",
+    "category": "Bottled Drinks ",
+    "localImage": null
+  },
+  {
+    "id": "44678383343",
+    "name": "Milk",
+    "description": "",
+    "displayPrice": "$$3.00",
+    "imageUrl": "",
+    "category": "Bottled Drinks ",
+    "localImage": null
+  },
+  {
+    "id": "44678383344",
+    "name": "Protein milk",
+    "description": "",
+    "displayPrice": "$$5.95",
+    "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photosV2/267e8b7b-6bed-49dc-90cb-919fdd665c9c-retina-large.jpg",
+    "category": "Bottled Drinks ",
+    "localImage": "assets/menu/44678383344.jpg"
+  },
+  {
+    "id": "44678790572",
+    "name": "Dragonfruit lemonade",
+    "description": "",
+    "displayPrice": "$$4.75",
+    "imageUrl": "",
+    "category": "Bottled Drinks ",
+    "localImage": null
+  },
+  {
+    "id": "44678790573",
+    "name": "Water",
+    "description": "",
+    "displayPrice": "$$3.00",
+    "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photosV2/8a1d421d-874d-4de7-ad24-6cea28ecbe1d-retina-large.jpg",
+    "category": "Bottled Drinks ",
+    "localImage": "assets/menu/44678790573.jpg"
+  },
+  {
+    "id": "44648627875",
+    "name": "Mocha",
+    "description": "Rich blend of espresso and chocolate, available in two sizes: 12 oz or 16 oz.",
+    "displayPrice": "$$5.75",
+    "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photosV2/5a9e0393-a72d-4a0a-9d47-b0444d1709c8-retina-large.jpg",
+    "category": "COFFEE & ESPRESSO",
+    "localImage": "assets/menu/44648627875.jpg"
+  },
+  {
+    "id": "44648627876",
+    "name": "Caramel Macchiato",
+    "description": "Rich espresso layered with velvety steamed milk and caramel drizzle. Available in two sizes: 12 oz or 16 oz.",
+    "displayPrice": "$$6.50",
+    "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photosV2/64073eed-b205-4462-b5f3-1d62bb2b28bf-retina-large.jpg",
+    "category": "COFFEE & ESPRESSO",
+    "localImage": "assets/menu/44648627876.jpg"
+  },
+  {
+    "id": "44678382984",
+    "name": "Black Coffee",
+    "description": "Choice of 12 oz or 16 oz. Freshly brewed and bold.",
+    "displayPrice": "$$7.25+",
+    "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photosV2/723249d0-eb5d-442b-8861-7cc560ec844d-retina-large.jpg",
+    "category": "COFFEE & ESPRESSO",
+    "localImage": "assets/menu/44678382984.jpg"
+  },
+  {
+    "id": "44648627882",
+    "name": "Espresso - 2 shots",
+    "description": "",
+    "displayPrice": "$$0.75",
+    "imageUrl": "",
+    "category": "COFFEE & ESPRESSO",
+    "localImage": null
+  },
+  {
+    "id": "44648627873",
+    "name": "Latte",
+    "description": "Creamy espresso with your choice of almond or oat milk. Available in 12 oz or 16 oz sizes.",
+    "displayPrice": "$$5.50",
+    "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photosV2/43e04150-76a0-4468-8712-6ca114eec151-retina-large.jpg",
+    "category": "COFFEE & ESPRESSO",
+    "localImage": "assets/menu/44648627873.jpg"
+  },
+  {
+    "id": "44648627874",
+    "name": "Cappuccino",
+    "description": "Rich espresso topped with foamed milk. Available in 12 oz or 16 oz sizes.",
+    "displayPrice": "$$4.50",
+    "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photosV2/a4ac42db-2aff-4416-8fef-97d963c11998-retina-large.jpg",
+    "category": "COFFEE & ESPRESSO",
+    "localImage": "assets/menu/44648627874.jpg"
+  },
+  {
+    "id": "44678790461",
+    "name": "Tiramisú Iced Coffee",
+    "description": "Chilled coffee inspired by classic Italian dessert tiramisú. Available in 12 oz or 16 oz sizes.",
+    "displayPrice": "$$7.25+",
+    "imageUrl": "",
+    "category": "ICED COFFEE",
+    "localImage": null
+  },
+  {
+    "id": "44648418745",
+    "name": "Hazelnut Cloud",
+    "description": "Iced coffee with hazelnut-infused foam. Available in 12 oz or 16 oz.",
+    "displayPrice": "$$6.75",
+    "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photosV2/179d8b2d-95a8-43fc-b345-a41507539b8c-retina-large.jpg",
+    "category": "ICED COFFEE",
+    "localImage": "assets/menu/44648418745.jpg"
+  },
+  {
+    "id": "44648418746",
+    "name": "Creme Brulee Iced Coffee",
+    "description": "Infused with creamy creme brulee flavor. Available in 12 oz or 16 oz sizes. Refreshing and sweet.",
+    "displayPrice": "$$6.75",
+    "imageUrl": "",
+    "category": "ICED COFFEE",
+    "localImage": null
+  },
+  {
+    "id": "44709201007",
+    "name": "Strawberry Matcha",
+    "description": "",
+    "displayPrice": "$$9.25",
+    "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photosV2/8276daf0-ef9c-49cb-a513-4ee48d58feed-retina-large.jpg",
+    "category": "ICED COFFEE",
+    "localImage": "assets/menu/44709201007.jpg"
+  },
+  {
+    "id": "44648418741",
+    "name": "JB Iced Coffee",
+    "description": "Two refreshing sizes: 12 oz or 16 oz iced coffee. Perfectly chilled for a cool caffeine boost.",
+    "displayPrice": "$$6.25",
+    "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photosV2/f7027255-a8da-452a-8869-347ffc28827f-ce85f7fa-ae3e-4079-9454-8786f6b92ac3-retina-large.jpg",
+    "category": "ICED COFFEE",
+    "localImage": "assets/menu/44648418741.png"
+  },
+  {
+    "id": "44648418744",
+    "name": "Brown Sugar Iced Coffee",
+    "description": "Brown sugar sweetness blended with iced coffee. Choose between 12 oz or 16 oz.",
+    "displayPrice": "$$6.75",
+    "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photosV2/8bf11f17-96fb-4870-86c8-800594ca8160-retina-large.jpg",
+    "category": "ICED COFFEE",
+    "localImage": "assets/menu/44648418744.jpg"
+  },
+  {
+    "id": "44648423601",
+    "name": "Sunrise Croissant",
+    "description": "",
+    "displayPrice": "$$8.95",
+    "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photosV2/96f643d1-9afb-47b0-a48e-e2701bf712b5-retina-large.jpg",
+    "category": "PASTRIES & BAKERY",
+    "localImage": "assets/menu/44648423601.jpg"
+  },
+  {
+    "id": "44648423602",
+    "name": "Sunrise Croissant - No Egg",
+    "description": "",
+    "displayPrice": "$$8.95",
+    "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photosV2/857fbebf-a45b-470b-957b-61a07906c943-retina-large.jpg",
+    "category": "PASTRIES & BAKERY",
+    "localImage": "assets/menu/44648423602.jpg"
+  },
+  {
+    "id": "44648423607",
+    "name": "Nutella Cookie (3-4 oz)",
+    "description": "",
+    "displayPrice": "$$8.50",
+    "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photosV2/fbcb8305-d2e4-4869-9b08-2ca8783192ca-retina-large.jpg",
+    "category": "PASTRIES & BAKERY",
+    "localImage": "assets/menu/44648423607.jpg"
+  },
+  {
+    "id": "44648423606",
+    "name": "Pain au Chocolat",
+    "description": "",
+    "displayPrice": "$$5.25",
+    "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photosV2/6fbfb799-2640-4695-97f4-9013efb2304a-retina-large.jpg",
+    "category": "PASTRIES & BAKERY",
+    "localImage": "assets/menu/44648423606.jpg"
+  },
+  {
+    "id": "44709200973",
+    "name": "Quesito",
+    "description": "",
+    "displayPrice": "$$4.95",
+    "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photosV2/763ce51c-2d09-49e1-9452-7bd843b01017-retina-large.jpg",
+    "category": "PASTRIES & BAKERY",
+    "localImage": "assets/menu/44709200973.jpg"
+  },
+  {
+    "id": "44709200974",
+    "name": "Quesito Dubai Chocolate",
+    "description": "",
+    "displayPrice": "$$5.95",
+    "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photosV2/dd646ad2-c4f7-408d-8686-650e8a502c78-retina-large.jpg",
+    "category": "PASTRIES & BAKERY",
+    "localImage": "assets/menu/44709200974.jpg"
+  },
+  {
+    "id": "44709200977",
+    "name": "Pastelillo guayaba",
+    "description": "",
+    "displayPrice": "$$4.00",
+    "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photosV2/d9af4a18-44cf-4c06-9234-09cde6d7d619-ec510914-d41f-4b19-aeef-8f566a7c1f5b-retina-large.jpg",
+    "category": "PASTRIES & BAKERY",
+    "localImage": "assets/menu/44709200977.png"
+  },
+  {
+    "id": "44709232402",
+    "name": "Pastelillo Nutella",
+    "description": "",
+    "displayPrice": "$$4.00",
+    "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photosV2/e6743cd1-7227-4aa3-a742-4a4b08e49ebc-51da3240-7dbd-4696-af10-a8bf202bdd24-retina-large.jpg",
+    "category": "PASTRIES & BAKERY",
+    "localImage": "assets/menu/44709232402.png"
+  },
+  {
+    "id": "44709200983",
+    "name": "Pan sobao",
+    "description": "",
+    "displayPrice": "$$5.95",
+    "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photosV2/2dcaa0df-4a59-4190-aeb5-e9441469a036-retina-large.jpg",
+    "category": "PASTRIES & BAKERY",
+    "localImage": "assets/menu/44709200983.jpg"
+  },
+  {
+    "id": "44648423599",
+    "name": "Croissant (Plain)",
+    "description": "",
+    "displayPrice": "$$4.75",
+    "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photosV2/44578812-fc14-401a-9591-e0f9150ff22f-retina-large.jpg",
+    "category": "PASTRIES & BAKERY",
+    "localImage": "assets/menu/44648423599.jpg"
+  },
+  {
+    "id": "44648423600",
+    "name": "Almond Croissant",
+    "description": "",
+    "displayPrice": "$$7.95",
+    "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/ugc/9561c522-fb5b-43c3-9510-cc4a7ab2b21e-6587b65c-1a66-4d07-bbf4-e457b8a1f880.jpg",
+    "category": "PASTRIES & BAKERY",
+    "localImage": "assets/menu/44648423600.png"
+  },
+  {
+    "id": "44678383043",
+    "name": "Banana & Nutella Waffle",
+    "description": "",
+    "displayPrice": "$$12.00",
+    "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photosV2/3cc72654-f320-411a-919c-afca3fab4d0d-retina-large.jpg",
+    "category": "BREAKFAST",
+    "localImage": "assets/menu/44678383043.jpg"
+  },
+  {
+    "id": "44678790525",
+    "name": "Tiramisú Waffle",
+    "description": "",
+    "displayPrice": "$$13.95",
+    "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photosV2/94b961d2-2172-402e-b092-404e2627c39a-retina-large.jpg",
+    "category": "BREAKFAST",
+    "localImage": "assets/menu/44678790525.jpg"
+  },
+  {
+    "id": "44648629375",
+    "name": "JB Parfait",
+    "description": "Greek yogurt, granola, banana, strawberry, almonds & honey",
+    "displayPrice": "$$10.95",
+    "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photosV2/bd619bda-cc4b-45a5-815e-b87951890d6f-retina-large.jpg",
+    "category": "BREAKFAST",
+    "localImage": "assets/menu/44648629375.jpg"
+  },
+  {
+    "id": "44678383045",
+    "name": "Dulce de Leche Waffle",
+    "description": "",
+    "displayPrice": "$$10.50",
+    "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photosV2/24166f94-c4b4-442f-9147-ec2c723fa894-retina-large.jpg",
+    "category": "BREAKFAST",
+    "localImage": "assets/menu/44678383045.jpg"
+  },
+  {
+    "id": "44678790524",
+    "name": "Nutella Waffle",
+    "description": "",
+    "displayPrice": "$$10.50",
+    "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photosV2/c9609c00-758c-46d1-834d-1ffdfabc72c3-retina-large.jpg",
+    "category": "BREAKFAST",
+    "localImage": "assets/menu/44678790524.jpg"
+  },
+  {
+    "id": "44678790526",
+    "name": "Plain Waffle",
+    "description": "",
+    "displayPrice": "$$8.95",
+    "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photosV2/091da695-43ea-46a1-b893-d3ee5932d166-retina-large.jpg",
+    "category": "BREAKFAST",
+    "localImage": "assets/menu/44678790526.jpg"
+  },
+  {
+    "id": "44648629373",
+    "name": "Nutella & Strawberry Waffle",
+    "description": "",
+    "displayPrice": "$$12.95",
+    "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photosV2/1c7908c9-1a58-4131-a5c8-d5c8194137da-retina-large.jpg",
+    "category": "BREAKFAST",
+    "localImage": "assets/menu/44648629373.jpg"
+  },
+  {
+    "id": "44648629374",
+    "name": "Oatmeal (Avena)",
+    "description": "",
+    "displayPrice": "$$5.50",
+    "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photosV2/56cb2b24-c0c8-4836-afe6-301d0a845418-retina-large.jpg",
+    "category": "BREAKFAST",
+    "localImage": "assets/menu/44648629374.jpg"
+  },
+  {
+    "id": "44648630873",
+    "name": "Oreo Milkshake",
+    "description": "",
+    "displayPrice": "$$10.95",
+    "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photosV2/6dc2f0ef-185c-4f93-8d90-6108d5f83e3a-retina-large.jpg",
+    "category": "MILKSHAKES",
+    "localImage": "assets/menu/44648630873.jpg"
+  },
+  {
+    "id": "44648630877",
+    "name": "Guava Milkshake",
+    "description": "",
+    "displayPrice": "$$10.95",
+    "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photosV2/11fc7dad-a445-4ad4-8293-7f42725172be-retina-large.jpg",
+    "category": "MILKSHAKES",
+    "localImage": "assets/menu/44648630877.jpg"
+  },
+  {
+    "id": "44648632375",
+    "name": "Tiramisu (Square)",
+    "description": "",
+    "displayPrice": "$$8.50",
+    "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photosV2/0f5da7ec-4f14-4db9-a661-8fa089ade1c5-retina-large.jpg",
+    "category": "DESSERTS",
+    "localImage": "assets/menu/44648632375.jpg"
+  },
+  {
+    "id": "44678790540",
+    "name": "Almond cake cup",
+    "description": "",
+    "displayPrice": "$$6.00",
+    "imageUrl": "",
+    "category": "DESSERTS",
+    "localImage": null
+  },
+  {
+    "id": "44648632379",
+    "name": "Guava Bread Pudding",
+    "description": "",
+    "displayPrice": "$$7.00",
+    "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photosV2/497ecfdd-05ea-423f-863b-882544e6451a-retina-large.jpg",
+    "category": "DESSERTS",
+    "localImage": "assets/menu/44648632379.jpg"
+  },
+  {
+    "id": "44678383294",
+    "name": "Passion fruit cheesecake slice",
+    "description": "",
+    "displayPrice": "$$7.95",
+    "imageUrl": "",
+    "category": "DESSERTS",
+    "localImage": null
+  },
+  {
+    "id": "44678790536",
+    "name": "Guava & Coconut cheesecake slice",
+    "description": "",
+    "displayPrice": "$$7.95",
+    "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photosV2/9dc1af4c-0367-49f8-84af-317066334104-retina-large.jpg",
+    "category": "DESSERTS",
+    "localImage": "assets/menu/44678790536.jpg"
+  },
+  {
+    "id": "44678790539",
+    "name": "Vanilla cake cup",
+    "description": "",
+    "displayPrice": "$$6.00",
+    "imageUrl": "",
+    "category": "DESSERTS",
+    "localImage": null
+  },
+  {
+    "id": "44678383297",
+    "name": "Red Velvet cake cup",
+    "description": "",
+    "displayPrice": "$$6.00",
+    "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photosV2/5ca16685-7cd6-4ac7-9eee-ca771dd8e96c-retina-large.jpg",
+    "category": "DESSERTS",
+    "localImage": "assets/menu/44678383297.jpg"
+  },
+  {
+    "id": "44648632374",
+    "name": "Strawberry cake cup",
+    "description": "",
+    "displayPrice": "$$6.00",
+    "imageUrl": "",
+    "category": "DESSERTS",
+    "localImage": null
+  },
+  {
+    "id": "44648632373",
+    "name": "Strawberry Cheesecake Slice",
+    "description": "",
+    "displayPrice": "$$7.95",
+    "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photosV2/64360b77-943f-4bb9-8922-d1590cde64f4-b8b61f02-c9ed-42fd-b301-040163b48d4f-retina-large.jpg",
+    "category": "DESSERTS",
+    "localImage": "assets/menu/44648632373.png"
+  }
+]
