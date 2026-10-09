@@ -215,6 +215,21 @@
     opacity: 0.9 !important;
   }
 
+  .hero-decor-mobile-tr-heart {
+    display: block !important;
+    position: absolute !important;
+    top: -4px !important;
+    right: 12px !important;
+    width: 62px !important;
+    max-width: 16vw !important;
+    height: auto !important;
+    transform: rotate(180deg) !important;
+    pointer-events: none !important;
+    z-index: 1 !important;
+    opacity: 0.85 !important;
+    filter: drop-shadow(0 2px 6px rgba(0,0,0,0.4)) !important;
+  }
+
   /* Bottom-to-top subtle gradient covering only the bottom ~35% for contrast */
   .hero-gradient-overlay {
     position: absolute !important;

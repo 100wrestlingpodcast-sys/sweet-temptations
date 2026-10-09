@@ -659,7 +659,8 @@ a {
 }
 
 .hero-decor-mobile-tl,
-.hero-decor-mobile-br {
+.hero-decor-mobile-br,
+.hero-decor-mobile-tr-heart {
   display: none;
 }
 
