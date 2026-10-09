@@ -608,7 +608,7 @@ a {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: right center;
+  object-position: 78% 6%;
   display: block;
 }
 
@@ -623,18 +623,154 @@ a {
   background: linear-gradient(
     to right,
     #090909 0%,
-    #090909 10%,
-    rgba(9, 9, 9, 0.95) 24%,
-    rgba(9, 9, 9, 0.6) 42%,
-    transparent 58%
+    #090909 4%,
+    rgba(9, 9, 9, 0.7) 12%,
+    rgba(9, 9, 9, 0.2) 20%,
+    transparent 30%
   );
+}
+
+/* ==========================================================================
+   Hero Decor Accents (Approved Decision: 2 Accents on Left only, Behind Content)
+   ========================================================================== */
+.hero-decor {
+  position: absolute;
+  pointer-events: none;
+  user-select: none;
+  z-index: 1;
+}
+
+.hero-decor-pink-top {
+  top: -12px;
+  left: -12px;
+  width: 110px;
+  height: auto;
+  opacity: 0.32;
+  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.4));
+}
+
+.hero-decor-heart {
+  bottom: 0;
+  left: 0;
+  width: 180px;
+  height: auto;
+  opacity: 0.85;
+  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.5));
+}
+
+/* ==========================================================================
+   Continuous Page Background (Organic Flowing Brand Waves & Expanded Pattern)
+   ========================================================================== */
+.page-brand-bg {
+  background-color: #FAF8F6;
+  background-image:
+    url('assets/brand/brand-waves-bg.svg'),
+    url('assets/brand/brand-pattern-waves-transparent.png');
+  background-repeat: repeat-y, repeat;
+  background-size: 100% auto, 520px 520px;
+  background-position: center top, center top;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   Brand Decor Accents across Body Sections (Behind content, docked hearts)
+   ========================================================================== */
+.brand-decor {
+  position: absolute;
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+}
+
+.brand-decor img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Specialties Section */
+.decor-shape-pink-spec {
+  top: 30px;
+  right: -25px;
+  width: 220px;
+  opacity: 0.25;
+}
+
+.decor-heart-spec {
+  bottom: 0;
+  left: 0;
+  width: 160px;
+  opacity: 0.22;
+}
+
+/* Menu Section */
+.decor-shape-pink-menu {
+  top: 12%;
+  left: -25px;
+  width: 190px;
+  opacity: 0.24;
+}
+
+.decor-heart-menu {
+  bottom: 0;
+  right: 0;
+  width: 180px;
+  opacity: 0.22;
+}
+
+/* Gallery Section */
+.decor-shape-pink-gallery {
+  top: 8%;
+  right: -20px;
+  width: 200px;
+  opacity: 0.24;
+}
+
+.decor-heart-gallery {
+  bottom: 0;
+  left: 0;
+  width: 165px;
+  opacity: 0.22;
+}
+
+/* Story Section */
+.decor-shape-pink-story {
+  top: 6%;
+  left: -25px;
+  width: 240px;
+  opacity: 0.26;
+}
+
+.decor-heart-story {
+  bottom: 0;
+  right: 0;
+  width: 175px;
+  opacity: 0.22;
+}
+
+/* Location Section */
+.decor-shape-pink-location {
+  top: 10%;
+  right: -20px;
+  width: 210px;
+  opacity: 0.25;
+}
+
+.decor-heart-location {
+  bottom: 0;
+  left: 0;
+  width: 160px;
+  opacity: 0.22;
 }
 
 /* ==========================================================================
    Specialties Cards Section
    ========================================================================== */
 .specialties-section {
-  background-color: var(--color-surface);
+  background-color: transparent;
+  position: relative;
+  overflow: hidden;
 }
 
 .specialties-grid {
@@ -672,6 +808,18 @@ a {
   height: 100%;
   object-fit: cover;
   transition: transform 0.3s ease;
+}
+
+.card-img-breakfast {
+  object-position: center center;
+}
+
+.card-img-cake {
+  object-position: center 15%;
+}
+
+.card-img-cookies {
+  object-position: center center;
 }
 
 .specialty-card:hover .card-img {
@@ -733,7 +881,7 @@ a {
    Full Menu Section
    ========================================================================== */
 .menu-section {
-  background-color: var(--color-bg);
+  background-color: transparent;
 }
 
 .menu-notice-box {
@@ -805,40 +953,50 @@ a {
   justify-content: center;
 }
 
-/* Category Tabs */
+/* Category Tabs (Multi-Row Adaptive Layout, No Horizontal Scroll) */
 .category-tabs-wrapper {
   display: flex;
-  gap: 8px;
-  overflow-x: auto;
-  padding-bottom: 10px;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: thin;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px 12px;
+  margin-bottom: 24px;
+  padding: 4px 0 10px 0;
+  overflow: visible;
 }
 
 .cat-tab {
   font-family: var(--font-sans);
-  white-space: nowrap;
-  padding: 8px 16px;
-  font-size: 0.875rem;
+  white-space: normal;
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 0.92rem;
   font-weight: 600;
   letter-spacing: -0.01em;
   border-radius: var(--radius-full);
   background-color: var(--color-surface);
   color: var(--color-ink);
-  border: 1px solid var(--color-pink-border);
+  border: 1.5px solid var(--color-pink-border);
   transition: all 0.2s ease;
-  min-height: 38px;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
 }
 
 .cat-tab:hover {
   background-color: var(--color-pink-light);
+  border-color: var(--color-fuchsia);
+  transform: translateY(-1px);
 }
 
 .cat-tab.active {
   background-color: var(--color-fuchsia);
   color: #FFFFFF;
   border-color: var(--color-fuchsia);
-  box-shadow: 0 4px 10px rgba(173, 36, 111, 0.2);
+  box-shadow: 0 4px 12px rgba(173, 36, 111, 0.28);
 }
 
 /* DoorDash-Style Menu Grid & Item Cards */
@@ -1088,7 +1246,7 @@ a {
    Gallery Section & Lightbox
    ========================================================================== */
 .gallery-section {
-  background-color: var(--color-surface);
+  background-color: transparent;
 }
 
 .gallery-grid {
@@ -1250,7 +1408,7 @@ a {
    Story / About Section
    ========================================================================== */
 .story-section {
-  background-color: var(--color-bg);
+  background-color: transparent;
 }
 
 .story-container {
@@ -1322,9 +1480,9 @@ a {
 }
 
 .story-img-owner {
-  aspect-ratio: 3 / 2;
+  aspect-ratio: 4 / 5;
   object-fit: cover;
-  object-position: center 20%;
+  object-position: center 78%;
 }
 
 .story-img-store {
@@ -1352,7 +1510,7 @@ a {
    Location & Hours Section
    ========================================================================== */
 .location-section {
-  background-color: var(--color-surface);
+  background-color: transparent;
 }
 
 .location-grid {
@@ -1373,6 +1531,7 @@ a {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center 12%;
 }
 
 .location-photo-badge {

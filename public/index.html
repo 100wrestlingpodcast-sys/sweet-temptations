@@ -6,8 +6,9 @@
   <meta name="robots" content="noindex, nofollow">
   <title>JB Sweet Temptations | Coffee • Bakery • Cake Design | Magnolia, TX</title>
   <meta name="description" content="JB Sweet Temptations en Magnolia, Texas. Café, repostería fresca y diseño de bizcochos para tus momentos especiales.">
-  <link rel="stylesheet" href="styles.css?v=2.0">
-  <link rel="stylesheet" href="mobile.css?v=2.0">
+  <link rel="stylesheet" href="styles.css?v=4.2">
+  <link rel="stylesheet" href="mobile.css?v=4.2">
+<link rel="stylesheet" href="visual-recovery.css?v=2">
 </head>
 <body>
   <!-- Skip link for accessibility -->
@@ -83,10 +84,14 @@
     
     <!-- Hero Section: Black to Pink gradient transition, large white emblem, compact layout -->
     <section id="home" class="hero-section">
-      <!-- Right Visual: Croissants, cookies and drinks dessert board anchored to viewport right edge -->
+      <!-- Decorative Accents in Hero (Left Side only, Behind Content) -->
+      <img src="assets/brand/pink-vector.svg" class="hero-decor hero-decor-pink-top" alt="" aria-hidden="true">
+      <img src="assets/brand/heart-vector.svg" class="hero-decor hero-decor-heart" alt="" aria-hidden="true">
+
+      <!-- Right Visual: Storefront facade anchored to viewport edge -->
       <div class="hero-visual">
         <div class="hero-gradient-overlay" aria-hidden="true"></div>
-        <img src="assets/hero-dessert.avif" alt="Variedad de croissants, galletas y bebidas en JB Sweet Temptations" class="hero-cookie-img" width="1000" height="300" fetchpriority="high">
+        <img src="assets/hero-storefront.jpg" alt="Fachada exterior y letrero de JB Sweet Temptations en Magnolia, Texas" class="hero-cookie-img" width="1086" height="1448" fetchpriority="high">
       </div>
 
       <div class="container hero-inner-container">
@@ -117,20 +122,26 @@
       </div>
     </section>
 
-    <!-- Specialties Section -->
-    <section id="specialties" class="specialties-section section-padding">
-      <div class="container">
-        <div class="section-header text-center">
-          <span class="section-kicker" data-i18n="spec_kicker">Nuestras especialidades</span>
-          <h2 class="section-title" data-i18n="spec_title">Pasión en cada bocado</h2>
-          <p class="section-intro" data-i18n="spec_intro">Descubre nuestras creaciones artesanales preparadas a diario con los mejores ingredientes.</p>
-        </div>
+    <!-- Continuous Brand Background Wrapper (Flowing organic curves throughout the body) -->
+    <div class="page-brand-bg">
+
+      <!-- Specialties Section -->
+      <section id="specialties" class="specialties-section section-padding">
+        <div class="brand-decor decor-shape-pink-spec" aria-hidden="true"><img src="assets/brand/pink-vector.svg" alt=""></div>
+        <div class="brand-decor decor-heart-spec" aria-hidden="true"><img src="assets/brand/heart-vector.svg" alt=""></div>
+
+        <div class="container">
+          <div class="section-header text-center">
+            <span class="section-kicker" data-i18n="spec_kicker">Nuestras especialidades</span>
+            <h2 class="section-title" data-i18n="spec_title">Raíces puertorriqueñas. Inspiración europea. Hecho en Magnolia.</h2>
+            <p class="section-intro" data-i18n="spec_intro">Descubre nuestras creaciones artesanales preparadas a diario con los mejores ingredientes.</p>
+          </div>
 
         <div class="specialties-grid">
           <!-- Card 1: Coffee & Breakfast -->
           <article class="specialty-card">
             <div class="card-img-wrap">
-              <img src="assets/802457471_1787510039614641_2829147288766330794_n.jpg" alt="Café latte recién preparado con delicioso croissant caliente" class="card-img" width="500" height="400" loading="lazy">
+              <img src="assets/specialty-breakfast.jpg" alt="Croissant de desayuno acompañado de café caliente y flores frescas en JB Sweet Temptations" class="card-img card-img-breakfast" width="1536" height="2048" loading="lazy">
               <span class="card-tag" data-i18n="spec_tag_coffee">Café & Desayuno</span>
             </div>
             <div class="card-body">
@@ -143,7 +154,7 @@
           <!-- Card 2: Custom Cakes -->
           <article class="specialty-card">
             <div class="card-img-wrap">
-              <img src="assets/795385925_1800503994981912_1501729458452053321_n.jpg" alt="Bizcocho artesanal con elegante decoración y cobertura verde texturizada" class="card-img" width="500" height="400" loading="lazy">
+              <img src="assets/specialty-cake.jpg" alt="Elegante bizcocho de boda blanco de varios niveles con delicada decoración floral artesanal" class="card-img card-img-cake" width="1536" height="2048" loading="lazy">
               <span class="card-tag" data-i18n="spec_tag_cakes">Cake Design</span>
             </div>
             <div class="card-body">
@@ -156,7 +167,7 @@
           <!-- Card 3: Cookies & Pastries -->
           <article class="specialty-card">
             <div class="card-img-wrap">
-              <img src="assets/794484928_1800491691649809_759161568872566410_n.jpg" alt="Galleta artesanal horneada con textura suave y chispas" class="card-img" width="500" height="400" loading="lazy">
+              <img src="assets/specialty-cookies.jpg" alt="Galleta artesanal completa con cobertura blanca y chispas festivas de colores" class="card-img card-img-cookies" width="1536" height="2048" loading="lazy">
               <span class="card-tag" data-i18n="spec_tag_pastries">Repostería</span>
             </div>
             <div class="card-body">
@@ -171,6 +182,9 @@
 
     <!-- Complete Menu Section -->
     <section id="menu" class="menu-section section-padding">
+      <div class="brand-decor decor-shape-pink-menu" aria-hidden="true"><img src="assets/brand/pink-vector.svg" alt=""></div>
+      <div class="brand-decor decor-heart-menu" aria-hidden="true"><img src="assets/brand/heart-vector.svg" alt=""></div>
+
       <div class="container">
         <div class="section-header text-center">
           <span class="section-kicker" data-i18n="menu_kicker">Menú informativo</span>
@@ -228,6 +242,9 @@
 
     <!-- Gallery Section -->
     <section id="gallery" class="gallery-section section-padding">
+      <div class="brand-decor decor-shape-pink-gallery" aria-hidden="true"><img src="assets/brand/pink-vector.svg" alt=""></div>
+      <div class="brand-decor decor-heart-gallery" aria-hidden="true"><img src="assets/brand/heart-vector.svg" alt=""></div>
+
       <div class="container">
         <div class="section-header text-center">
           <span class="section-kicker" data-i18n="gallery_kicker">Galería visual</span>
@@ -236,31 +253,55 @@
         </div>
 
         <div class="gallery-grid" id="gallery-grid">
-          <!-- Gallery Item 1: Bizcocho Rosa -->
-          <button class="gallery-item-btn" data-img="assets/802002945_1787514172947561_8124437263232924631_n.jpg" data-alt-es="Bizcocho decorado con tonos rosa y crema para celebración" data-alt-en="Pink and cream decorated celebration cake" data-caption-es="Bizcocho artesanal decorado en tonos rosa y blanco." data-caption-en="Handcrafted celebration cake in pink and white tones.">
-            <img src="assets/802002945_1787514172947561_8124437263232924631_n.jpg" alt="Bizcocho decorado con tonos rosa y crema para celebración" class="gallery-thumb" width="400" height="400" loading="lazy">
+          <!-- Gallery Item 1: Cake rosa de celebración -->
+          <button class="gallery-item-btn" data-img="assets/gallery/gallery-cake-pink.jpg" data-alt-es="Bizcocho de celebración artesanal decorado en delicados tonos rosa y detalles florales" data-alt-en="Handcrafted celebration cake decorated in delicate pink tones and floral accents" data-caption-es="Bizcocho artesanal para celebraciones especiales." data-caption-en="Custom handcrafted cake for special celebrations.">
+            <img src="assets/gallery/gallery-cake-pink.jpg" alt="Bizcocho de celebración artesanal decorado en tonos rosa" class="gallery-thumb" width="400" height="533" loading="lazy">
             <span class="gallery-hover-overlay">
               <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
             </span>
           </button>
 
-          <!-- Gallery Item 2: Birthday Cake Cookie Announcement -->
-          <button class="gallery-item-btn" data-img="assets/796355415_1800491688316476_6052885699826384766_n.jpg" data-alt-es="Anuncio de la galleta Birthday Cake Cookie con chispas de colores" data-alt-en="Birthday Cake Cookie announcement with sprinkles" data-caption-es="Birthday Cake Cookie: Galleta suave horneada con chispas festivas." data-caption-en="Birthday Cake Cookie: Soft-baked cookie with festive sprinkles.">
-            <img src="assets/796355415_1800491688316476_6052885699826384766_n.jpg" alt="Anuncio de la galleta Birthday Cake Cookie" class="gallery-thumb" width="400" height="400" loading="lazy">
+          <!-- Gallery Item 2: Porción de postre con fresas -->
+          <button class="gallery-item-btn" data-img="assets/gallery/gallery-dessert-strawberry.jpg" data-alt-es="Porción de postre gourmet decorada con fresas frescas y crema suave" data-alt-en="Gourmet dessert slice garnished with fresh strawberries and light cream" data-caption-es="Postres frescos de inspiración europea preparados diariamente." data-caption-en="Fresh European-inspired desserts crafted daily.">
+            <img src="assets/gallery/gallery-dessert-strawberry.jpg" alt="Porción de postre gourmet con fresas frescas" class="gallery-thumb" width="400" height="533" loading="lazy">
             <span class="gallery-hover-overlay">
               <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
             </span>
           </button>
 
-          <!-- Gallery Item 3: Bizcocho Empacado -->
-          <button class="gallery-item-btn" data-img="assets/797007150_1800503981648580_3422256932092805356_n.jpg" data-alt-es="Bizcocho artesanal listo y empacado para entrega" data-alt-en="Artisanal cake packaged ready for pickup" data-caption-es="Bizcocho listo con empaque protector para eventos y órdenes especiales." data-caption-en="Cake safely boxed and packaged for pickup and celebrations.">
-            <img src="assets/797007150_1800503981648580_3422256932092805356_n.jpg" alt="Bizcocho artesanal listo y empacado" class="gallery-thumb" width="400" height="400" loading="lazy">
+          <!-- Gallery Item 3: Bebida en vaso con el logo -->
+          <button class="gallery-item-btn" data-img="assets/gallery/gallery-drink-logo.jpg" data-alt-es="Bebida fría especial servida en vaso con el logo de JB Sweet Temptations" data-alt-en="Specialty iced beverage served in cup featuring the JB Sweet Temptations logo" data-caption-es="Especialidades frías de café y bebidas refrescantes." data-caption-en="Iced coffee specialties and refreshing beverages.">
+            <img src="assets/gallery/gallery-drink-logo.jpg" alt="Bebida fría servida en vaso con logo de la casa" class="gallery-thumb" width="400" height="533" loading="lazy">
             <span class="gallery-hover-overlay">
               <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
             </span>
           </button>
 
-          <!-- Gallery Item 4: Desayuno Boricua / Pan sobao, avena y café -->
+          <!-- Gallery Item 4: Beatriz mostrando una bandeja de panes -->
+          <button class="gallery-item-btn" data-img="assets/gallery/gallery-beatriz-breads.jpg" data-alt-es="Beatriz Vega presentando una bandeja de panes artesanales recién horneados" data-alt-en="Beatriz Vega presenting a tray of freshly baked artisanal breads" data-caption-es="Pan sobao y pan de agua horneados con sabor boricua auténtico." data-caption-en="Pan sobao and pan de agua baked with authentic Puerto Rican flavor.">
+            <img src="assets/gallery/gallery-beatriz-breads.jpg" alt="Beatriz Vega presentando bandeja de panes artesanales" class="gallery-thumb" width="400" height="533" loading="lazy">
+            <span class="gallery-hover-overlay">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+            </span>
+          </button>
+
+          <!-- Gallery Item 5: Galletas con cobertura sobre una rejilla -->
+          <button class="gallery-item-btn" data-img="assets/gallery/gallery-cookies-rack.jpg" data-alt-es="Galletas artesanales con cobertura sobre rejilla recién salidas del horno" data-alt-en="Handcrafted iced cookies on a cooling rack fresh from the oven" data-caption-es="Galletas gourmet horneadas artesanalmente con texturas suaves." data-caption-en="Handcrafted gourmet cookies baked fresh with tender textures.">
+            <img src="assets/gallery/gallery-cookies-rack.jpg" alt="Galletas artesanales con glaseado sobre rejilla" class="gallery-thumb" width="400" height="547" loading="lazy">
+            <span class="gallery-hover-overlay">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+            </span>
+          </button>
+
+          <!-- Gallery Item 6: Macarons de colores -->
+          <button class="gallery-item-btn" data-img="assets/gallery/gallery-macarons.jpg" data-alt-es="Surtido de macarons franceses de colores y diversos rellenos" data-alt-en="Assortment of colorful French macarons with diverse fillings" data-caption-es="Macarons franceses tradicionales con técnica europea." data-caption-en="Traditional French macarons with European technique.">
+            <img src="assets/gallery/gallery-macarons.jpg" alt="Surtido de macarons franceses de colores" class="gallery-thumb" width="400" height="533" loading="lazy">
+            <span class="gallery-hover-overlay">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+            </span>
+          </button>
+
+          <!-- Gallery Item 7: Desayuno Boricua / Pan sobao, avena y café -->
           <button class="gallery-item-btn" data-img="assets/802459150_1788534006178911_6926317453327347871_n.jpg" data-alt-es="Desayuno completo con avena cremosa, pan sobao tostado y taza de café caliente" data-alt-en="Breakfast spread with warm oatmeal, pan sobao bread and hot coffee" data-caption-es="Desayuno tradicional: Avena calientita, pan sobao y café recién colado." data-caption-en="Traditional breakfast: Warm oatmeal, pan sobao, and freshly brewed coffee.">
             <img src="assets/802459150_1788534006178911_6926317453327347871_n.jpg" alt="Desayuno con avena, pan sobao y café" class="gallery-thumb" width="400" height="400" loading="lazy">
             <span class="gallery-hover-overlay">
@@ -268,7 +309,7 @@
             </span>
           </button>
 
-          <!-- Gallery Item 5: Interior del local -->
+          <!-- Gallery Item 8: Interior del local -->
           <button class="gallery-item-btn" data-img="assets/800001221_1786452166387095_2136119658881553182_n.jpg" data-alt-es="Interior acogedor de JB Sweet Temptations con paredes en tonos rosa y mesas" data-alt-en="Cozy interior of JB Sweet Temptations with pink walls and dining tables" data-caption-es="Nuestro salón en Magnolia: Un ambiente cálido, dulce y relajante." data-caption-en="Our dining room in Magnolia: Warm, charming, and inviting.">
             <img src="assets/800001221_1786452166387095_2136119658881553182_n.jpg" alt="Interior acogedor de la cafetería" class="gallery-thumb" width="400" height="400" loading="lazy">
             <span class="gallery-hover-overlay">
@@ -276,7 +317,7 @@
             </span>
           </button>
 
-          <!-- Gallery Item 6: Bizcocho verde texturizado -->
+          <!-- Gallery Item 9: Bizcocho verde texturizado -->
           <button class="gallery-item-btn" data-img="assets/795385925_1800503994981912_1501729458452053321_n.jpg" data-alt-es="Bizcocho verde decorado con flores y detalle de glaseado" data-alt-en="Green decorated cake with floral accents and textured frosting" data-caption-es="Diseño exclusivo de bizcocho personalizado." data-caption-en="Custom cake design handcrafted with precision.">
             <img src="assets/795385925_1800503994981912_1501729458452053321_n.jpg" alt="Bizcocho decorado verde" class="gallery-thumb" width="400" height="400" loading="lazy">
             <span class="gallery-hover-overlay">
@@ -284,17 +325,25 @@
             </span>
           </button>
 
-          <!-- Gallery Item 7: Rótulo exterior -->
-          <button class="gallery-item-btn" data-img="assets/558247114_1475533207478994_5316422531804397070_n.jpg" data-alt-es="Rótulo exterior de JB Sweet Temptations en Magnolia" data-alt-en="Outdoor storefront sign of JB Sweet Temptations" data-caption-es="Rótulo de entrada en 126 Roy St, Suite C." data-caption-en="Storefront sign at 126 Roy St, Suite C.">
-            <img src="assets/558247114_1475533207478994_5316422531804397070_n.jpg" alt="Rótulo exterior del local" class="gallery-thumb" width="400" height="400" loading="lazy">
+          <!-- Gallery Item 10: Corte de Cinta / Apertura -->
+          <button class="gallery-item-btn" data-img="assets/797962117_1784470283251950_2218267205885328154_n.jpg" data-alt-es="Celebración comunitaria de inauguración y corte de cinta" data-alt-en="Grand opening ribbon-cutting community celebration" data-caption-es="Momento especial de inauguración junto a la comunidad de Magnolia." data-caption-en="Grand opening ribbon-cutting ceremony with the Magnolia community.">
+            <img src="assets/797962117_1784470283251950_2218267205885328154_n.jpg" alt="Corte de cinta en la apertura" class="gallery-thumb" width="400" height="400" loading="lazy">
             <span class="gallery-hover-overlay">
               <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
             </span>
           </button>
 
-          <!-- Gallery Item 8: Corte de Cinta / Apertura -->
-          <button class="gallery-item-btn" data-img="assets/797962117_1784470283251950_2218267205885328154_n.jpg" data-alt-es="Celebración comunitaria de inauguración y corte de cinta" data-alt-en="Grand opening ribbon-cutting community celebration" data-caption-es="Momento especial de inauguración junto a la comunidad de Magnolia." data-caption-en="Grand opening ribbon-cutting ceremony with the Magnolia community.">
-            <img src="assets/797962117_1784470283251950_2218267205885328154_n.jpg" alt="Corte de cinta en la apertura" class="gallery-thumb" width="400" height="400" loading="lazy">
+          <!-- Gallery Item 11: Bizcocho Empacado -->
+          <button class="gallery-item-btn" data-img="assets/797007150_1800503981648580_3422256932092805356_n.jpg" data-alt-es="Bizcocho artesanal listo y empacado para entrega" data-alt-en="Artisanal cake packaged ready for pickup" data-caption-es="Bizcocho listo con empaque protector para eventos y órdenes especiales." data-caption-en="Cake safely boxed and packaged for pickup and celebrations.">
+            <img src="assets/797007150_1800503981648580_3422256932092805356_n.jpg" alt="Bizcocho artesanal listo y empacado" class="gallery-thumb" width="400" height="400" loading="lazy">
+            <span class="gallery-hover-overlay">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+            </span>
+          </button>
+
+          <!-- Gallery Item 12: Birthday Cake Cookie Announcement -->
+          <button class="gallery-item-btn" data-img="assets/796355415_1800491688316476_6052885699826384766_n.jpg" data-alt-es="Galleta Birthday Cake Cookie con chispas de colores" data-alt-en="Birthday Cake Cookie announcement with sprinkles" data-caption-es="Birthday Cake Cookie: Galleta suave horneada con chispas festivas." data-caption-en="Birthday Cake Cookie: Soft-baked cookie with festive sprinkles.">
+            <img src="assets/796355415_1800491688316476_6052885699826384766_n.jpg" alt="Galleta Birthday Cake Cookie" class="gallery-thumb" width="400" height="400" loading="lazy">
             <span class="gallery-hover-overlay">
               <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
             </span>
@@ -320,13 +369,23 @@
 
     <!-- Story / About Section -->
     <section id="story" class="story-section section-padding">
+      <div class="brand-decor decor-shape-pink-story" aria-hidden="true"><img src="assets/brand/pink-vector.svg" alt=""></div>
+      <div class="brand-decor decor-heart-story" aria-hidden="true"><img src="assets/brand/heart-vector.svg" alt=""></div>
+
       <div class="container story-container">
         <div class="story-text">
           <span class="section-kicker" data-i18n="story_kicker">Nuestra historia</span>
-          <h2 class="section-title" data-i18n="story_title">Dulzura, Café y Pasión</h2>
-          <p class="story-paragraph" data-i18n="story_p1">JB Sweet Temptations reúne café, repostería y diseño de bizcochos en Magnolia.</p>
-          <p class="story-paragraph" data-i18n="story_p2">Cada mañana preparamos con esmero café de especialidad, desayunos reconfortantes y postres artesanales para compartir alegría con nuestros vecinos y visitantes.</p>
-          <p class="story-paragraph" data-i18n="story_p3">Ya sea que busques tu café favorito del día, un antojo dulce, un bizcocho personalizado para una fecha inolvidable o tu pan sobao al estilo de Puerto Rico, aquí siempre te esperamos con una sonrisa.</p>
+          <h2 class="section-title" data-i18n="story_title">De Puerto Rico a Francia, y ahora Magnolia</h2>
+          
+          <div class="story-body">
+            <p class="story-paragraph" data-i18n="story_p1">JB Sweet Temptations nació de mi pasión por transformar la repostería en una experiencia que une sabor, arte y cultura.</p>
+            <p class="story-paragraph" data-i18n="story_p2">Soy Beatriz Vega, puertorriqueña, Cake Designer y propietaria de JB Sweet Temptations. Mi formación en Cake Design me llevó hasta Francia, donde tuve la oportunidad de certificarme y ampliar mis conocimientos en el arte de la pastelería y el diseño.</p>
+            <p class="story-paragraph" data-i18n="story_p3">Hoy, en Magnolia, Texas, he creado un espacio que reúne diferentes partes de mi historia. En nuestra vitrina puedes encontrar inspiración de la repostería francesa e italiana, junto a esos sabores puertorriqueños que siempre me conectan con mis raíces.</p>
+            <p class="story-paragraph" data-i18n="story_p4">Desde croissants y postres europeos hasta quesitos, pan sobao y pan de agua, cada creación representa un pedacito de ese recorrido.</p>
+            <p class="story-paragraph" data-i18n="story_p5">Y el Cake Design continúa siendo parte esencial de JB Sweet Temptations: creamos bizcochos personalizados donde sabor, técnica y diseño se unen para celebrar los momentos más especiales de nuestros clientes.</p>
+            <p class="story-paragraph" data-i18n="story_p6">JB Sweet Temptations es más que una bakery. Es un pedacito de Puerto Rico, una influencia de Europa y un sueño que hoy tiene hogar en Magnolia.</p>
+            <p class="story-tagline" data-i18n="story_tagline">Life is sweeter here.</p>
+          </div>
           
           <div class="story-highlights">
             <div class="highlight-item">
@@ -356,8 +415,8 @@
         <div class="story-visual">
           <div class="story-visual-grid">
             <figure class="story-image-card story-card-owner">
-              <img src="assets/owner-studio.png" alt="Retrato de la dueña de JB Sweet Temptations con delantal negro y bandeja de repostería artesanal" data-alt-i18n="story_img1_alt" class="story-img story-img-owner" width="768" height="512" loading="lazy">
-              <figcaption class="story-img-badge" data-i18n="story_img1_badge">Hecho con pasión artesanal</figcaption>
+              <img src="assets/story-beatriz.jpg" alt="Beatriz Vega, puertorriqueña, Cake Designer y propietaria de JB Sweet Temptations vestida de blanco con una copa" data-alt-i18n="story_img1_alt" class="story-img story-img-owner" width="1366" height="2048" loading="lazy">
+              <figcaption class="story-img-badge" data-i18n="story_img1_badge">Beatriz Vega • Cake Designer</figcaption>
             </figure>
             <figure class="story-image-card story-card-store">
               <img src="assets/800001221_1786452166387095_2136119658881553182_n.jpg" alt="Interior acogedor y decorado de JB Sweet Temptations en Magnolia" data-alt-i18n="story_img2_alt" class="story-img story-img-store" width="600" height="450" loading="lazy">
@@ -370,6 +429,9 @@
 
     <!-- Location & Hours Section -->
     <section id="location" class="location-section section-padding">
+      <div class="brand-decor decor-shape-pink-location" aria-hidden="true"><img src="assets/brand/pink-vector.svg" alt=""></div>
+      <div class="brand-decor decor-heart-location" aria-hidden="true"><img src="assets/brand/heart-vector.svg" alt=""></div>
+
       <div class="container">
         <div class="section-header text-center">
           <span class="section-kicker" data-i18n="loc_kicker">Visítanos</span>
@@ -380,7 +442,7 @@
         <div class="location-grid">
           <!-- Storefront Photo Card -->
           <div class="location-photo-card">
-            <img src="assets/806176914_1789552409410404_8494141078597211720_n.jpg" alt="Fachada exterior de JB Sweet Temptations en 126 Roy St Suite C, Magnolia TX" class="location-img" width="600" height="450" loading="lazy">
+            <img src="assets/location-storefront.jpg" alt="Fachada exterior con letrero y logo de JB Sweet Temptations en 126 Roy St Suite C, Magnolia TX" class="location-img" width="768" height="1024" loading="lazy">
             <div class="location-photo-badge">
               <span data-i18n="loc_badge">126 Roy St, Suite C</span>
             </div>
@@ -481,6 +543,8 @@
         </div>
       </div>
     </section>
+
+    </div><!-- End .page-brand-bg -->
 
   </main>
 

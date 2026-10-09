@@ -171,9 +171,33 @@
     width: 100% !important;
     height: 100% !important;
     object-fit: cover !important;
-    object-position: center 50% !important;
+    object-position: center 8% !important;
     opacity: 1 !important;
     display: block !important;
+  }
+
+  /* Approved Hero Decors for Mobile (Compact, Behind Content) */
+  .hero-decor {
+    position: absolute !important;
+    pointer-events: none !important;
+    user-select: none !important;
+    z-index: 1 !important;
+  }
+
+  .hero-decor-pink-top {
+    top: -8px !important;
+    left: -8px !important;
+    width: 65px !important;
+    opacity: 0.25 !important;
+    z-index: 1 !important;
+  }
+
+  .hero-decor-heart {
+    bottom: 0 !important;
+    left: -5px !important;
+    width: 95px !important;
+    opacity: 0.65 !important;
+    z-index: 1 !important;
   }
 
   /* Bottom-to-top subtle gradient covering only the bottom ~35% for contrast */
@@ -383,20 +407,34 @@
   }
 
   .category-tabs-wrapper {
-    width: 100%;
-    max-width: 100%;
-    gap: 6px;
-    padding-bottom: 6px;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    box-sizing: border-box;
+    width: 100% !important;
+    max-width: 100% !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 8px 6px !important;
+    margin-bottom: 18px !important;
+    padding: 0 0 6px 0 !important;
+    overflow-x: visible !important;
+    overflow-y: visible !important;
+    box-sizing: border-box !important;
   }
 
   .cat-tab {
-    min-height: 40px;
-    padding: 6px 14px;
-    font-size: 0.84rem;
-    flex-shrink: 0;
+    min-height: 44px !important;
+    padding: 8px 14px !important;
+    font-size: 0.84rem !important;
+    line-height: 1.2 !important;
+    white-space: normal !important;
+    text-align: center !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: var(--radius-full) !important;
+    flex: 0 1 auto !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
   }
 
   .menu-grid {
@@ -532,8 +570,18 @@
 
   .story-paragraph {
     font-size: 0.95rem;
-    line-height: 1.5;
-    margin-bottom: 10px;
+    line-height: 1.55;
+    margin-bottom: 12px;
+  }
+
+  .story-tagline {
+    font-family: var(--font-serif);
+    font-size: 1.15rem;
+    font-weight: 700;
+    font-style: italic;
+    color: var(--color-fuchsia);
+    text-align: center;
+    margin: 12px 0 18px 0;
   }
 
   .story-highlights {
@@ -573,9 +621,9 @@
   }
 
   .story-img-owner {
-    aspect-ratio: 3 / 2;
+    aspect-ratio: 4 / 5;
     object-fit: cover;
-    object-position: center 15%;
+    object-position: center 78% !important;
   }
 
   .story-img-store {
@@ -592,7 +640,97 @@
   }
 
   /* ------------------------------------------------------------------------
-     8. Mobile Location & Contact Section
+     8. Mobile Continuous Brand Background & Scaled Accents (Behind Content)
+     ------------------------------------------------------------------------ */
+  .page-brand-bg {
+    background-color: #FAF8F6 !important;
+    background-image:
+      url('assets/brand/brand-waves-mobile.svg'),
+      url('assets/brand/brand-pattern-waves-transparent.png') !important;
+    background-repeat: repeat-y, repeat !important;
+    background-size: 100% auto, 320px 320px !important;
+    background-position: center top, center top !important;
+  }
+
+  .brand-decor {
+    position: absolute !important;
+    pointer-events: none !important;
+    user-select: none !important;
+    z-index: 0 !important;
+  }
+
+  .decor-shape-pink-spec {
+    top: 15px !important;
+    right: -15px !important;
+    width: 130px !important;
+    opacity: 0.18 !important;
+  }
+
+  .decor-heart-spec {
+    bottom: 0 !important;
+    left: 0 !important;
+    width: 100px !important;
+    opacity: 0.16 !important;
+  }
+
+  .decor-shape-pink-menu {
+    top: 8% !important;
+    left: -15px !important;
+    width: 110px !important;
+    opacity: 0.16 !important;
+  }
+
+  .decor-heart-menu {
+    bottom: 0 !important;
+    right: 0 !important;
+    width: 110px !important;
+    opacity: 0.15 !important;
+  }
+
+  .decor-shape-pink-gallery {
+    top: 5% !important;
+    right: -15px !important;
+    width: 120px !important;
+    opacity: 0.16 !important;
+  }
+
+  .decor-heart-gallery {
+    bottom: 0 !important;
+    left: 0 !important;
+    width: 100px !important;
+    opacity: 0.15 !important;
+  }
+
+  .decor-shape-pink-story {
+    top: 4% !important;
+    left: -15px !important;
+    width: 130px !important;
+    opacity: 0.18 !important;
+  }
+
+  .decor-heart-story {
+    bottom: 0 !important;
+    right: 0 !important;
+    width: 105px !important;
+    opacity: 0.16 !important;
+  }
+
+  .decor-shape-pink-location {
+    top: 6% !important;
+    right: -15px !important;
+    width: 120px !important;
+    opacity: 0.16 !important;
+  }
+
+  .decor-heart-location {
+    bottom: 0 !important;
+    left: 0 !important;
+    width: 95px !important;
+    opacity: 0.15 !important;
+  }
+
+  /* ------------------------------------------------------------------------
+     9. Mobile Location & Contact Section
      ------------------------------------------------------------------------ */
   .location-grid {
     grid-template-columns: 1fr;
@@ -605,7 +743,15 @@
     border-radius: var(--radius-lg);
     overflow: hidden;
     width: 100%;
+    aspect-ratio: 4 / 3 !important;
     box-sizing: border-box;
+  }
+
+  .location-img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center 12% !important;
   }
 
   .location-info-card {
