@@ -865,3 +865,19 @@
   }
 
 }
+
+/* Mobile brand layer, deliberately independent of desktop scale. */
+@media(max-width:767px){
+ .page-brand-bg {
+  background-color:#fff!important;
+  background-image:linear-gradient(rgba(255,255,255,.96),rgba(255,255,255,.96)),url('assets/brand/pattern-original.png')!important;
+  background-size:auto,760px auto!important;
+  background-repeat:repeat,repeat-y!important;
+ }
+ .brand-decor {opacity:.10!important;max-width:100px;z-index:-1!important;}
+ .hero-decor-heart {width:60px!important;opacity:.35!important;bottom:-5px!important;left:0!important;}
+ .hero-decor-pink-top {width:40px!important;top:0!important;left:0!important;opacity:.2!important;}
+ .specialties-section .section-title {font-size:clamp(23px,6.1vw,27px);line-height:1.22;}
+ .category-tabs-wrapper {flex-wrap:wrap!important;overflow:visible!important;}
+ .cat-tab {white-space:normal;min-height:44px;max-width:100%;}
+}

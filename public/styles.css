@@ -1931,3 +1931,20 @@ a {
     scroll-behavior: auto !important;
   }
 }
+
+/* Integrated brand recovery: opacity belongs to the background, not content. */
+.page-brand-bg {
+ background-color:#fff;
+ background-image:linear-gradient(rgba(255,255,255,.94),rgba(255,255,255,.94)),url('assets/brand/pattern-original.png');
+ background-size:auto,100% auto;
+ background-repeat:repeat,repeat-y;
+ background-position:center top;
+ isolation:isolate;
+}
+.page-brand-bg > section {position:relative;isolation:isolate;}
+.page-brand-bg > section > .container {position:relative;z-index:1;}
+.hero-decor,.brand-decor {filter:none;pointer-events:none;}
+.brand-decor {opacity:.14;z-index:-1;}
+.hero-decor-heart {width:min(150px,10vw);bottom:-10px;left:0;opacity:.75;transform:rotate(8deg);transform-origin:bottom left;}
+.hero-decor-pink-top {width:82px;top:0;left:0;opacity:.3;}
+[class*="decor-heart-"] {bottom:-12px;transform:rotate(8deg);transform-origin:bottom left;}
