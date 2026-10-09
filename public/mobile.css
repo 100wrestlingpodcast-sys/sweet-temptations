@@ -891,3 +891,15 @@
  .hero-decor-pink-top {width:70px!important;opacity:.7!important;top:-7px!important;left:auto!important;right:0!important;}
  .hero-inner-container {padding-left:24px!important;padding-right:24px!important;}
 }
+
+/* Mobile brand hierarchy: high-resolution emblem in hero, no duplicate in nav. */
+@media(max-width:767px){
+ .site-header .logo-link, header .logo-link {display:none!important;}
+ .hero-section {min-height:240px!important;padding:20px 0!important;box-sizing:border-box!important;}
+ .hero-brand-group {gap:12px!important;}
+ .hero-emblem-wrap {display:flex!important;align-items:center;justify-content:center;}
+ .hero-logo-emblem {width:96px!important;height:96px!important;object-fit:contain!important;}
+ .hero-title {font-size:clamp(20px,5.5vw,23px)!important;margin-bottom:14px!important;line-height:1.2!important;}
+ .hero-decor-heart {width:76px!important;opacity:.65!important;}
+ .hero-decor-pink-top {width:55px!important;opacity:.45!important;}
+}
