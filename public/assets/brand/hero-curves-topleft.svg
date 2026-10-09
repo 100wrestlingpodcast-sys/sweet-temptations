@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" width="100%" height="100%" fill="none">
+  <!-- Soft Pink broad wave -->
+  <path d="M -15 90 C 25 85, 65 65, 80 30 C 90 8, 85 -15, 80 -25" stroke="#F0D1E3" stroke-width="16" stroke-linecap="round" fill="none" opacity="0.9"/>
+  
+  <!-- Fuchsia rich ribbon -->
+  <path d="M -20 120 C 35 115, 95 85, 110 35 C 120 2, 110 -15, 105 -25" stroke="#DC589A" stroke-width="11" stroke-linecap="round" fill="none" opacity="0.95"/>
+  
+  <!-- Gold/Yellow vibrant accent -->
+  <path d="M -25 145 C 45 140, 120 105, 135 40 C 145 0, 130 -20, 120 -30" stroke="#E0CD54" stroke-width="7" stroke-linecap="round" fill="none" opacity="0.95"/>
+  
+  <!-- Charcoal deep contour -->
+  <path d="M -30 165 C 55 160, 140 120, 155 45 C 165 -5, 145 -25, 135 -35" stroke="#443C49" stroke-width="4.5" stroke-linecap="round" fill="none" opacity="0.85"/>
+  
+  <!-- Secondary soft organic loop -->
+  <path d="M -10 45 C 15 40, 35 25, 45 -10" stroke="#DC589A" stroke-width="6" stroke-linecap="round" fill="none" opacity="0.75"/>
+</svg>

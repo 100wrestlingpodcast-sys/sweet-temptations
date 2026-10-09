@@ -176,7 +176,7 @@
     display: block !important;
   }
 
-  /* Approved Hero Decors for Mobile (Compact, Behind Content) */
+  /* Mobile Hero Decors: Organic corner curves entering top-left and bottom-right */
   .hero-decor {
     position: absolute !important;
     pointer-events: none !important;
@@ -184,20 +184,35 @@
     z-index: 1 !important;
   }
 
-  .hero-decor-pink-top {
-    top: -8px !important;
-    left: -8px !important;
-    width: 65px !important;
-    opacity: 0.25 !important;
-    z-index: 1 !important;
+  .hero-decor-pink-top,
+  .hero-decor-heart {
+    display: none !important;
   }
 
-  .hero-decor-heart {
-    bottom: 0 !important;
-    left: -5px !important;
-    width: 95px !important;
-    opacity: 0.65 !important;
+  .hero-decor-mobile-tl {
+    display: block !important;
+    position: absolute !important;
+    top: -4px !important;
+    left: -4px !important;
+    width: 140px !important;
+    max-width: 38vw !important;
+    height: auto !important;
+    pointer-events: none !important;
     z-index: 1 !important;
+    opacity: 0.9 !important;
+  }
+
+  .hero-decor-mobile-br {
+    display: block !important;
+    position: absolute !important;
+    bottom: -4px !important;
+    right: -4px !important;
+    width: 140px !important;
+    max-width: 38vw !important;
+    height: auto !important;
+    pointer-events: none !important;
+    z-index: 1 !important;
+    opacity: 0.9 !important;
   }
 
   /* Bottom-to-top subtle gradient covering only the bottom ~35% for contrast */
@@ -875,8 +890,6 @@
   background-repeat:repeat,repeat-y!important;
  }
  .brand-decor {opacity:.28!important;max-width:130px;z-index:-1!important;}
- .hero-decor-heart {width:60px!important;opacity:.35!important;bottom:-5px!important;left:0!important;}
- .hero-decor-pink-top {width:40px!important;top:0!important;left:0!important;opacity:.2!important;}
  .specialties-section .section-title {font-size:clamp(23px,6.1vw,27px);line-height:1.22;}
  .category-tabs-wrapper {flex-wrap:wrap!important;overflow:visible!important;}
  .cat-tab {white-space:normal;min-height:44px;max-width:100%;}
@@ -884,22 +897,25 @@
 
 /* Mobile-only black brand hero; desktop storefront composition is unchanged. */
 @media(max-width:767px){
- .hero-section {background:#090909!important;min-height:190px!important;padding:32px 0 28px!important;justify-content:center!important;}
- .hero-visual,.hero-gradient-overlay {display:none!important;}
- .hero-title {color:#fff!important;font-size:clamp(23px,6.2vw,28px)!important;line-height:1.2!important;margin-bottom:18px!important;text-shadow:none!important;}
- .hero-decor-heart {width:88px!important;opacity:.85!important;bottom:-8px!important;left:0!important;}
- .hero-decor-pink-top {width:70px!important;opacity:.7!important;top:-7px!important;left:auto!important;right:0!important;}
- .hero-inner-container {padding-left:24px!important;padding-right:24px!important;}
-}
-
-/* Mobile brand hierarchy: high-resolution emblem in hero, no duplicate in nav. */
-@media(max-width:767px){
  .site-header .logo-link, header .logo-link {display:none!important;}
- .hero-section {min-height:240px!important;padding:20px 0!important;box-sizing:border-box!important;}
+ .hero-section {
+  background:#090909!important;
+  min-height:240px!important;
+  padding:24px 0 20px!important;
+  box-sizing:border-box!important;
+  justify-content:center!important;
+ }
+ .hero-visual,.hero-gradient-overlay {display:none!important;}
  .hero-brand-group {gap:12px!important;}
  .hero-emblem-wrap {display:flex!important;align-items:center;justify-content:center;}
  .hero-logo-emblem {width:96px!important;height:96px!important;object-fit:contain!important;}
- .hero-title {font-size:clamp(20px,5.5vw,23px)!important;margin-bottom:14px!important;line-height:1.2!important;}
- .hero-decor-heart {width:76px!important;opacity:.65!important;}
- .hero-decor-pink-top {width:55px!important;opacity:.45!important;}
+ .hero-title {
+  color:#fff!important;
+  font-size:clamp(20px,5.5vw,23px)!important;
+  line-height:1.2!important;
+  margin-bottom:14px!important;
+  text-shadow:none!important;
+ }
+ .hero-inner-container {padding-left:20px!important;padding-right:20px!important;}
 }
+
