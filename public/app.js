@@ -1033,7 +1033,8 @@ const TRANSLATIONS = {
 // ==========================================================================
 // 3. State Management
 // ==========================================================================
-let currentLang = localStorage.getItem('jb_lang') || 'es';
+const urlLangParam = new URLSearchParams(window.location.search).get('lang');
+let currentLang = (urlLangParam === 'es' || urlLangParam === 'en') ? urlLangParam : (localStorage.getItem('jb_lang') || 'es');
 let activeCategory = 'all';
 let currentSearchTerm = '';
 let currentGalleryIndex = 0;

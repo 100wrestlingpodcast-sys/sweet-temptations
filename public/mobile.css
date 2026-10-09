@@ -48,9 +48,13 @@
   }
 
   .section-title {
+    font-family: var(--font-serif) !important;
+    font-weight: 700 !important;
+    font-style: italic !important;
     font-size: 1.7rem; /* ~27px */
     line-height: 1.2;
     margin-bottom: 6px;
+    letter-spacing: -0.01em;
   }
 
   .section-intro {
@@ -298,6 +302,7 @@
     font-family: var(--font-serif) !important;
     font-size: 1.35rem !important; /* ~22px */
     font-weight: 700 !important;
+    font-style: italic !important;
     line-height: 1.18 !important;
     color: #FFFFFF !important;
     text-align: center !important;
@@ -396,8 +401,12 @@
   }
 
   .card-title {
-    font-size: 1.25rem;
+    font-family: var(--font-serif) !important;
+    font-weight: 700 !important;
+    font-style: italic !important;
+    font-size: 1.25rem !important;
     margin-bottom: 4px;
+    letter-spacing: -0.01em;
   }
 
   .card-text {
@@ -925,10 +934,14 @@
  .hero-emblem-wrap {display:flex!important;align-items:center;justify-content:center;}
  .hero-logo-emblem {width:96px!important;height:96px!important;object-fit:contain!important;}
  .hero-title {
+  font-family: var(--font-serif) !important;
+  font-weight: 700 !important;
+  font-style: italic !important;
   color:#fff!important;
   font-size:clamp(20px,5.5vw,23px)!important;
   line-height:1.2!important;
   margin-bottom:14px!important;
+  letter-spacing:-0.01em!important;
   text-shadow:none!important;
  }
  .hero-inner-container {padding-left:20px!important;padding-right:20px!important;}
