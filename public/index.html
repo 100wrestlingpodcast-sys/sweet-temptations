@@ -8,8 +8,8 @@
   <meta name="description" content="JB Sweet Temptations en Magnolia, Texas. Café, repostería fresca y diseño de bizcochos para tus momentos especiales.">
   <link rel="preload" href="assets/fonts/playfair-display-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/playfair-display-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="styles.css?v=4.7">
-  <link rel="stylesheet" href="mobile.css?v=4.7">
+  <link rel="stylesheet" href="styles.css?v=4.8">
+  <link rel="stylesheet" href="mobile.css?v=4.8">
 </head>
 <body>
   <!-- Skip link for accessibility -->
@@ -88,9 +88,8 @@
       <!-- Decorative Accents in Hero -->
       <img src="assets/brand/pink-vector.svg" class="hero-decor hero-decor-pink-top" alt="" aria-hidden="true">
       <img src="assets/brand/heart-vector.svg" class="hero-decor hero-decor-heart" alt="" aria-hidden="true">
-      <img src="assets/brand/hero-curves-topleft.svg" class="hero-decor hero-decor-mobile-tl" alt="" aria-hidden="true">
-      <img src="assets/brand/hero-curves-bottomright.svg" class="hero-decor hero-decor-mobile-br" alt="" aria-hidden="true">
-      <img src="assets/brand/heart-vector.svg" class="hero-decor hero-decor-mobile-tr-heart" alt="" aria-hidden="true">
+      <img src="assets/brand/pattern-lines-corner.png" class="hero-decor hero-decor-mobile-tl" alt="" aria-hidden="true">
+      <img src="assets/brand/pattern-lines-corner.png" class="hero-decor hero-decor-mobile-br" alt="" aria-hidden="true">
 
       <!-- Right Visual: Storefront facade anchored to viewport edge -->
       <div class="hero-visual">
@@ -151,7 +150,7 @@
             <div class="card-body">
               <h3 class="card-title" data-i18n="spec_title_coffee">Café y desayunos</h3>
               <p class="card-text" data-i18n="spec_desc_coffee">Espresso aromático, café helado especial, lattes, avena fresca, pan sobao y croissants horneados.</p>
-              <a href="#menu" class="card-link" data-i18n="spec_link_coffee">Ver opciones de café →</a>
+              <button class="card-link" data-category-modal="coffee_espresso" data-i18n="spec_link_coffee">Ver opciones de café →</button>
             </div>
           </article>
 
@@ -164,7 +163,7 @@
             <div class="card-body">
               <h3 class="card-title" data-i18n="spec_title_cakes">Bizcochos y diseño</h3>
               <p class="card-text" data-i18n="spec_desc_cakes">Diseños personalizados para cumpleaños, bodas y ocasiones especiales, elaborados con técnica y detalle.</p>
-              <a href="tel:+12817589186" class="card-link" data-i18n="spec_link_cakes">Consultar pedidos especiales →</a>
+              <button class="card-link" data-category-modal="desserts" data-i18n="spec_link_cakes">Ver postres y bizcochos →</button>
             </div>
           </article>
 
@@ -177,7 +176,7 @@
             <div class="card-body">
               <h3 class="card-title" data-i18n="spec_title_pastries">Galletas y repostería</h3>
               <p class="card-text" data-i18n="spec_desc_pastries">Galletas estilo gourmet, quesitos, pastelillos de guayaba y postres en vasito llenos de sabor.</p>
-              <a href="#menu" class="card-link" data-i18n="spec_link_pastries">Ver dulces y postres →</a>
+              <button class="card-link" data-category-modal="pastries_bakery" data-i18n="spec_link_pastries">Ver dulces y postres →</button>
             </div>
           </article>
         </div>
@@ -612,6 +611,27 @@
       <span>Facebook</span>
     </a>
   </nav>
+
+  <!-- Floating Category Menu Modal -->
+  <div id="cat-modal" class="cat-modal" role="dialog" aria-modal="true" aria-labelledby="cat-modal-title" aria-hidden="true">
+    <div class="cat-modal-backdrop" id="cat-modal-backdrop"></div>
+    <div class="cat-modal-dialog">
+      <div class="cat-modal-header">
+        <h3 id="cat-modal-title" class="cat-modal-title">
+          <span id="cat-modal-icon">☕</span>
+          <span id="cat-modal-title-text">Café y Desayunos</span>
+        </h3>
+        <button id="cat-modal-close-btn" class="cat-modal-close-btn" aria-label="Cerrar ventana de menú">✕</button>
+      </div>
+      <div class="cat-modal-body" id="cat-modal-items-container">
+        <!-- Dynamically injected items with photos, descriptions, prices & DoorDash order button -->
+      </div>
+      <div class="cat-modal-footer">
+        <span class="cat-modal-footer-text" data-i18n="cat_modal_footer_note">Ordena directamente en DoorDash</span>
+        <a id="cat-modal-doordash-btn" href="https://www.doordash.com/store/jb-sweet-temptations-magnolia-51904045/" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size:0.85rem; padding:8px 16px; min-height:38px;">Ver menú en DoorDash ↗</a>
+      </div>
+    </div>
+  </div>
 
   <!-- JavaScript -->
   <script src="app.js"></script>

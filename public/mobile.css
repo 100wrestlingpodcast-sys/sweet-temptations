@@ -188,50 +188,60 @@
     z-index: 1 !important;
   }
 
-  .hero-decor-pink-top,
-  .hero-decor-heart {
+  .hero-decor-pink-top {
     display: none !important;
+  }
+
+  .hero-decor-heart {
+    display: block !important;
+    position: absolute !important;
+    top: -12px !important;
+    right: 0 !important;
+    bottom: auto !important;
+    left: auto !important;
+    width: 90px !important;
+    max-width: 25vw !important;
+    height: auto !important;
+    transform: scaleY(-1) !important;
+    transform-origin: center center !important;
+    opacity: 0.92 !important;
+    z-index: 2 !important;
+    pointer-events: none !important;
+    filter: drop-shadow(0 2px 8px rgba(0,0,0,0.5)) !important;
   }
 
   .hero-decor-mobile-tl {
     display: block !important;
     position: absolute !important;
-    top: -4px !important;
-    left: -4px !important;
-    width: 140px !important;
-    max-width: 38vw !important;
+    top: -50px !important;
+    left: -50px !important;
+    width: 260px !important;
+    max-width: 70vw !important;
     height: auto !important;
+    transform: rotate(-25deg) !important;
+    transform-origin: center center !important;
     pointer-events: none !important;
     z-index: 1 !important;
-    opacity: 0.9 !important;
+    opacity: 0.92 !important;
+    -webkit-mask-image: radial-gradient(ellipse 75% 75% at 22% 22%, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 32%, rgba(0,0,0,0.35) 54%, rgba(0,0,0,0.08) 70%, transparent 82%) !important;
+    mask-image: radial-gradient(ellipse 75% 75% at 22% 22%, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 32%, rgba(0,0,0,0.35) 54%, rgba(0,0,0,0.08) 70%, transparent 82%) !important;
   }
 
   .hero-decor-mobile-br {
     display: block !important;
     position: absolute !important;
-    bottom: -4px !important;
-    right: -4px !important;
-    width: 140px !important;
-    max-width: 38vw !important;
+    bottom: -60px !important;
+    right: -45px !important;
+    width: 260px !important;
+    max-width: 70vw !important;
     height: auto !important;
+    transform: rotate(155deg) !important;
+    transform-origin: center center !important;
     pointer-events: none !important;
     z-index: 1 !important;
-    opacity: 0.9 !important;
-  }
-
-  .hero-decor-mobile-tr-heart {
-    display: block !important;
-    position: absolute !important;
-    top: -4px !important;
-    right: 12px !important;
-    width: 62px !important;
-    max-width: 16vw !important;
-    height: auto !important;
-    transform: rotate(180deg) !important;
-    pointer-events: none !important;
-    z-index: 1 !important;
-    opacity: 0.85 !important;
-    filter: drop-shadow(0 2px 6px rgba(0,0,0,0.4)) !important;
+    opacity: 0.92 !important;
+    -webkit-mask-image: radial-gradient(ellipse 75% 75% at 22% 22%, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 32%, rgba(0,0,0,0.35) 54%, rgba(0,0,0,0.08) 70%, transparent 82%) !important;
+    mask-image: radial-gradient(ellipse 75% 75% at 22% 22%, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 32%, rgba(0,0,0,0.35) 54%, rgba(0,0,0,0.08) 70%, transparent 82%) !important;
   }
 
   /* Bottom-to-top subtle gradient covering only the bottom ~35% for contrast */
@@ -308,6 +318,8 @@
     text-align: center !important;
     margin: 0 0 10px 0 !important;
     letter-spacing: -0.01em !important;
+    -webkit-text-stroke: 0.75px #000000 !important;
+    paint-order: stroke fill !important;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.95), 0 0 10px rgba(0, 0, 0, 0.7) !important;
     width: 100% !important;
     max-width: 100% !important;
@@ -387,13 +399,16 @@
   }
 
   .specialty-card {
-    border-radius: var(--radius-md);
+    border-radius: var(--radius-lg);
     width: 100%;
     box-sizing: border-box;
+    background-color: #141615;
+    border: 1px solid rgba(255, 255, 255, 0.08);
   }
 
   .card-img-wrap {
-    height: 170px;
+    height: auto !important;
+    aspect-ratio: 4/3 !important;
   }
 
   .card-body {
@@ -908,12 +923,12 @@
 /* Mobile brand layer, deliberately independent of desktop scale. */
 @media(max-width:767px){
  .page-brand-bg {
-  background-color:#fff!important;
-  background-image:linear-gradient(rgba(255,255,255,.89),rgba(255,255,255,.89)),url('assets/brand/pattern-original.png')!important;
+  background-color:#0A0B0B!important;
+  background-image:linear-gradient(rgba(10,11,11,.88),rgba(10,11,11,.88)),url('assets/brand/pattern-original.png')!important;
   background-size:auto,760px auto!important;
   background-repeat:repeat,repeat-y!important;
  }
- .brand-decor {opacity:.28!important;max-width:130px;z-index:-1!important;}
+ .brand-decor {opacity:.18!important;max-width:130px;z-index:-1!important;}
  .specialties-section .section-title {font-size:clamp(23px,6.1vw,27px);line-height:1.22;}
  .category-tabs-wrapper {flex-wrap:wrap!important;overflow:visible!important;}
  .cat-tab {white-space:normal;min-height:44px;max-width:100%;}

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" preserveAspectRatio="none">
+  <!-- Organic waves entering/exiting from right side & bottom-right, bleeding outside bounds -->
+  <path d="M210 180 C170 180, 130 160, 105 130 C80 100, 75 55, 90 5 C95 -10, 105 -20, 120 -20 C140 -20, 125 35, 140 70 C155 105, 185 130, 210 140 Z" fill="#DECB3A" opacity="0.92"/>
+  <path d="M210 150 C165 150, 120 125, 95 90 C70 55, 75 10, 95 -25 C110 -25, 95 20, 115 50 C135 80, 175 110, 210 115 Z" fill="#F3C7D9" opacity="0.95"/>
+  <path d="M210 120 C160 120, 110 90, 85 50 C65 15, 80 -25, 100 -30 C115 -30, 105 5, 120 35 C135 65, 180 85, 210 90 Z" fill="#D8247E" opacity="0.95"/>
+  <path d="M210 90 C165 90, 125 60, 105 20 C95 0, 100 -30, 120 -30 C135 -30, 125 0, 140 25 C155 50, 185 65, 210 68 Z" fill="#363138" opacity="0.85"/>
+</svg>

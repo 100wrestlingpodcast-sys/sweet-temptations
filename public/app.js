@@ -1049,6 +1049,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initLiveHours();
   initMenu();
   initGallery();
+  initCategoryModal();
   initCurrentYear();
 });
 
@@ -1371,6 +1372,10 @@ function renderMenuItems() {
       </div>
     `;
 
+    const itemDoorDashUrl = item.id 
+      ? `https://www.doordash.com/store/jb-sweet-temptations-magnolia-51904045/?item_id=${item.id}` 
+      : (item.orderUrl || "https://www.doordash.com/store/jb-sweet-temptations-magnolia-51904045/");
+
     html += `
       <article class="doordash-item-card ${item.image ? 'has-img' : 'has-placeholder'}">
         <div class="menu-card-content">
@@ -1382,10 +1387,16 @@ function renderMenuItems() {
           ${desc ? `<p class="menu-card-desc">${desc}</p>` : ''}
           <div class="menu-card-footer">
             <span class="menu-card-price">${priceDisplay}</span>
-            <a href="${item.orderUrl}" target="_blank" rel="noopener noreferrer" class="menu-card-order-btn" aria-label="${dict.order_item_btn} ${name} en DoorDash">
-              <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M22.04 8.7c-.3-.49-.78-.7-1.34-.7H7.72c-.85 0-1.57.55-1.78 1.37L4.06 17.1c-.24.96.48 1.9 1.48 1.9h12.98c.85 0 1.57-.55 1.78-1.37l1.88-7.73c.1-.4.04-.8-.14-1.2z"/></svg>
-              <span>${dict.order_item_btn}</span>
-            </a>
+            <div class="menu-card-actions">
+              <a href="${itemDoorDashUrl}" target="_blank" rel="noopener noreferrer" class="menu-card-order-btn" aria-label="${dict.order_item_btn} ${name} en DoorDash">
+                <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M22.04 8.7c-.3-.49-.78-.7-1.34-.7H7.72c-.85 0-1.57.55-1.78 1.37L4.06 17.1c-.24.96.48 1.9 1.48 1.9h12.98c.85 0 1.57-.55 1.78-1.37l1.88-7.73c.1-.4.04-.8-.14-1.2z"/></svg>
+                <span>${dict.order_item_btn}</span>
+              </a>
+              <a href="tel:+12817589186" class="menu-card-call-btn" aria-label="${dict.cta_call_short} para ordenar ${name}">
+                <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24 11.72 11.72 0 003.68.59 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.72 11.72 0 00.59 3.68 1 1 0 01-.24 1.02l-2.23 2.09z"/></svg>
+                <span>${dict.cta_call_short}</span>
+              </a>
+            </div>
           </div>
         </div>
         ${imgHtml}
@@ -1502,4 +1513,125 @@ function initCurrentYear() {
   if (yearEl) {
     yearEl.textContent = new Date().getFullYear();
   }
+}
+
+// ==========================================================================
+// 11. Floating Category Menu Modal (Quick DoorDash Ordering Sheet)
+// ==========================================================================
+function initCategoryModal() {
+  const modal = document.getElementById('cat-modal');
+  if (!modal) return;
+
+  const backdrop = document.getElementById('cat-modal-backdrop');
+  const closeBtn = document.getElementById('cat-modal-close-btn');
+  const titleText = document.getElementById('cat-modal-title-text');
+  const titleIcon = document.getElementById('cat-modal-icon');
+  const itemsContainer = document.getElementById('cat-modal-items-container');
+
+  const categoryMeta = {
+    coffee_espresso: {
+      icon: '☕',
+      title: { es: 'Café y Desayunos', en: 'Coffee & Breakfast' },
+      categoryIds: ['coffee_espresso', 'breakfast', 'iced_coffee']
+    },
+    desserts: {
+      icon: '🎂',
+      title: { es: 'Bizcochos y Postres', en: 'Cakes & Desserts' },
+      categoryIds: ['desserts']
+    },
+    pastries_bakery: {
+      icon: '🥐',
+      title: { es: 'Galletas y Repostería', en: 'Pastries & Bakery' },
+      categoryIds: ['pastries_bakery']
+    }
+  };
+
+  function openCategoryModal(catKey) {
+    const meta = categoryMeta[catKey] || {
+      icon: '✨',
+      title: { es: 'Especialidades', en: 'Specialties' },
+      categoryIds: [catKey]
+    };
+
+    if (titleIcon) titleIcon.textContent = meta.icon;
+    if (titleText) titleText.textContent = meta.title[currentLang] || meta.title.es;
+
+    // Collect items from specified categories
+    let items = [];
+    if (typeof MENU_DATA !== 'undefined' && MENU_DATA.categories) {
+      MENU_DATA.categories.forEach(cat => {
+        if (meta.categoryIds.includes(cat.id)) {
+          cat.items.forEach(it => items.push(it));
+        }
+      });
+    }
+
+    if (itemsContainer) {
+      if (items.length === 0) {
+        itemsContainer.innerHTML = `<p style="text-align:center; color:#94A39F; padding:20px 0;">${currentLang === 'en' ? 'No items found.' : 'No se encontraron artículos.'}</p>`;
+      } else {
+        itemsContainer.innerHTML = items.map(it => {
+          const name = it.name[currentLang] || it.name.es;
+          const desc = it.description ? (it.description[currentLang] || it.description.es) : '';
+          const imgHtml = it.image 
+            ? `<img src="${it.image}" alt="${name}" class="cat-modal-item-img" loading="lazy">` 
+            : `<div class="cat-modal-item-img" style="display:flex;align-items:center;justify-content:center;color:#FFA4CB;font-size:1.4rem;background:#181B1A;">${meta.icon}</div>`;
+          const orderText = (typeof TRANSLATIONS !== 'undefined' && TRANSLATIONS[currentLang]) ? (TRANSLATIONS[currentLang].order_item_btn || 'Pedir') : 'Pedir';
+          const callText = (typeof TRANSLATIONS !== 'undefined' && TRANSLATIONS[currentLang]) ? (TRANSLATIONS[currentLang].cta_call_short || 'Llamar') : 'Llamar';
+          const itemDoorDashUrl = it.id 
+            ? `https://www.doordash.com/store/jb-sweet-temptations-magnolia-51904045/?item_id=${it.id}` 
+            : (it.orderUrl || "https://www.doordash.com/store/jb-sweet-temptations-magnolia-51904045/");
+
+          return `
+            <div class="cat-modal-item">
+              ${imgHtml}
+              <div class="cat-modal-item-info">
+                <div class="cat-modal-item-name">${name}</div>
+                ${desc ? `<div class="cat-modal-item-desc">${desc}</div>` : ''}
+                <div class="cat-modal-item-price">${it.displayPrice || `$${it.price.toFixed(2)}`}</div>
+              </div>
+              <div class="cat-modal-item-actions">
+                <a href="${itemDoorDashUrl}" target="_blank" rel="noopener noreferrer" class="cat-modal-item-btn cat-modal-order-btn" aria-label="${orderText} ${name} en DoorDash">
+                  <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M22.04 8.7c-.3-.49-.78-.7-1.34-.7H7.72c-.85 0-1.57.55-1.78 1.37L4.06 17.1c-.24.96.48 1.9 1.48 1.9h12.98c.85 0 1.57-.55 1.78-1.37l1.88-7.73c.1-.4.04-.8-.14-1.2z"/></svg>
+                  <span>${orderText}</span>
+                </a>
+                <a href="tel:+12817589186" class="cat-modal-item-btn cat-modal-call-btn" aria-label="${callText} a la tienda por ${name}">
+                  <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24 11.72 11.72 0 003.68.59 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.72 11.72 0 00.59 3.68 1 1 0 01-.24 1.02l-2.23 2.09z"/></svg>
+                  <span>${callText}</span>
+                </a>
+              </div>
+            </div>
+          `;
+        }).join('');
+      }
+    }
+
+    modal.classList.add('open');
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeCategoryModal() {
+    modal.classList.remove('open');
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  }
+
+  // Bind trigger buttons
+  document.querySelectorAll('[data-category-modal]').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const catKey = btn.getAttribute('data-category-modal');
+      openCategoryModal(catKey);
+    });
+  });
+
+  if (closeBtn) closeBtn.addEventListener('click', closeCategoryModal);
+  if (backdrop) backdrop.addEventListener('click', closeCategoryModal);
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.classList.contains('open')) {
+      closeCategoryModal();
+    }
+  });
 }
