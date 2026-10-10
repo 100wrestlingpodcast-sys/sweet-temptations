@@ -1045,6 +1045,7 @@ let galleryItems = [];
 // ==========================================================================
 document.addEventListener('DOMContentLoaded', () => {
   initLanguage();
+  initTheme();
   initNavigation();
   initLiveHours();
   initMenu();
@@ -1052,6 +1053,49 @@ document.addEventListener('DOMContentLoaded', () => {
   initCategoryModal();
   initCurrentYear();
 });
+
+// ==========================================================================
+// 4.5. Theme Management (Light Cream / Dark Luxury Switcher)
+// ==========================================================================
+function initTheme() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const themeParam = urlParams.get('theme');
+  const savedTheme = themeParam || localStorage.getItem('jb_theme') || 'light';
+  setTheme(savedTheme);
+
+  const toggleBtns = document.querySelectorAll('.theme-toggle-btn, [data-theme-toggle]');
+  toggleBtns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const current = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+      const next = current === 'dark' ? 'light' : 'dark';
+      setTheme(next);
+    });
+  });
+}
+
+function setTheme(theme) {
+  if (theme === 'dark') {
+    document.documentElement.setAttribute('data-theme', 'dark');
+    localStorage.setItem('jb_theme', 'dark');
+  } else {
+    document.documentElement.removeAttribute('data-theme');
+    localStorage.setItem('jb_theme', 'light');
+  }
+  updateThemeToggleUI(theme);
+}
+
+function updateThemeToggleUI(theme) {
+  const isDark = theme === 'dark';
+  document.querySelectorAll('.theme-toggle-btn, [data-theme-toggle]').forEach(btn => {
+    btn.setAttribute('aria-pressed', isDark ? 'true' : 'false');
+    btn.setAttribute('title', isDark ? 'Cambiar a fondo claro' : 'Cambiar a fondo oscuro');
+    const label = btn.querySelector('.theme-toggle-label');
+    if (label) {
+      label.textContent = isDark ? (currentLang === 'en' ? 'Dark' : 'Negro') : (currentLang === 'en' ? 'Light' : 'Claro');
+    }
+  });
+}
 
 // ==========================================================================
 // 5. Language Switching System
@@ -1126,6 +1170,8 @@ function applyLanguage(lang) {
 
   const lightboxNextBtn = document.getElementById('lightbox-next-btn');
   if (lightboxNextBtn) lightboxNextBtn.setAttribute('aria-label', dict.lightbox_next_label);
+
+  updateThemeToggleUI(document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light');
 
   // Re-render Category Tabs & Menu items
   renderCategoryTabs();
