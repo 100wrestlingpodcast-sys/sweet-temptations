@@ -73,7 +73,7 @@
   --radius-lg: 22px;
   --radius-full: 9999px;
 
-  --header-height: 60px;
+  --header-height: 52px;
   --bottom-bar-height: 60px;
 
   --divider-header: rgba(255, 255, 255, 0.90);
@@ -418,22 +418,7 @@ a {
   transition: all 0.2s ease;
 }
 
-/* Center Logo */
-.logo-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.header-logo-img {
-  height: 46px;
-  width: auto;
-  max-width: 165px;
-  object-fit: contain;
-  filter: brightness(0) invert(1);
-  display: block;
-}
-
+/* Header Actions */
 .header-actions {
   display: flex;
   align-items: center;
