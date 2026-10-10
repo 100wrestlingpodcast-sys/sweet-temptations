@@ -29,11 +29,6 @@
       </a>
 
       <div class="header-actions">
-        <button id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Cambiar color de fondo" title="Cambiar color de fondo (Claro / Negro)">
-          <svg class="theme-icon-sun" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
-          <svg class="theme-icon-moon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
-          <span class="theme-toggle-label">Claro</span>
-        </button>
         <button id="lang-toggle-btn" class="lang-btn" aria-label="Cambiar a inglés">
           <span class="lang-indicator active-lang" data-lang="es">ES</span>
           <span class="lang-divider">|</span>
@@ -64,15 +59,6 @@
       <a href="#story" class="nav-link" data-i18n="nav_story">Nuestra historia</a>
       <a href="#location" class="nav-link" data-i18n="nav_location">Ubicación y horarios</a>
     </nav>
-
-    <div class="side-nav-theme-row">
-      <span class="side-nav-theme-title">Color de fondo:</span>
-      <button class="theme-toggle-btn theme-toggle-btn-drawer" data-theme-toggle aria-label="Cambiar color de fondo">
-        <svg class="theme-icon-sun" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
-        <svg class="theme-icon-moon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
-        <span class="theme-toggle-label">Claro</span>
-      </button>
-    </div>
 
     <div class="side-nav-footer">
       <a href="https://www.doordash.com/store/jb-sweet-temptations-magnolia-51904045/" target="_blank" rel="noopener noreferrer" class="btn btn-doordash btn-block" aria-label="Ordenar en DoorDash (abre en nueva ventana)">
@@ -156,7 +142,7 @@
 
         <div class="specialties-grid">
           <!-- Card 1: Coffee & Breakfast -->
-          <article class="specialty-card">
+          <article class="specialty-card" data-category-modal="coffee_espresso" role="button" tabindex="0" aria-label="Ver opciones de café y desayunos">
             <div class="card-img-wrap">
               <img src="assets/specialty-breakfast.jpg" alt="Croissant de desayuno acompañado de café caliente y flores frescas en JB Sweet Temptations" class="card-img card-img-breakfast" width="1536" height="2048" loading="lazy">
               <span class="card-tag" data-i18n="spec_tag_coffee">Café & Desayuno</span>
@@ -169,7 +155,7 @@
           </article>
 
           <!-- Card 2: Custom Cakes -->
-          <article class="specialty-card">
+          <article class="specialty-card" data-category-modal="desserts" role="button" tabindex="0" aria-label="Ver postres y bizcochos">
             <div class="card-img-wrap">
               <img src="assets/specialty-cake.jpg" alt="Elegante bizcocho de boda blanco de varios niveles con delicada decoración floral artesanal" class="card-img card-img-cake" width="1536" height="2048" loading="lazy">
               <span class="card-tag" data-i18n="spec_tag_cakes">Cake Design</span>
@@ -182,7 +168,7 @@
           </article>
 
           <!-- Card 3: Cookies & Pastries -->
-          <article class="specialty-card">
+          <article class="specialty-card" data-category-modal="pastries_bakery" role="button" tabindex="0" aria-label="Ver dulces y repostería">
             <div class="card-img-wrap">
               <img src="assets/specialty-cookies.jpg" alt="Galleta artesanal completa con cobertura blanca y chispas festivas de colores" class="card-img card-img-cookies" width="1536" height="2048" loading="lazy">
               <span class="card-tag" data-i18n="spec_tag_pastries">Repostería</span>

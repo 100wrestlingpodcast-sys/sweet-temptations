@@ -1058,31 +1058,8 @@ document.addEventListener('DOMContentLoaded', () => {
 // 4.5. Theme Management (Light Cream / Dark Luxury Switcher)
 // ==========================================================================
 function initTheme() {
-  const urlParams = new URLSearchParams(window.location.search);
-  const themeParam = urlParams.get('theme');
-  const savedTheme = themeParam || localStorage.getItem('jb_theme') || 'light';
-  setTheme(savedTheme);
-
-  const toggleBtns = document.querySelectorAll('.theme-toggle-btn, [data-theme-toggle]');
-  toggleBtns.forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      e.preventDefault();
-      const current = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
-      const next = current === 'dark' ? 'light' : 'dark';
-      setTheme(next);
-    });
-  });
-}
-
-function setTheme(theme) {
-  if (theme === 'dark') {
-    document.documentElement.setAttribute('data-theme', 'dark');
-    localStorage.setItem('jb_theme', 'dark');
-  } else {
-    document.documentElement.removeAttribute('data-theme');
-    localStorage.setItem('jb_theme', 'light');
-  }
-  updateThemeToggleUI(theme);
+  document.documentElement.removeAttribute('data-theme');
+  localStorage.setItem('jb_theme', 'light');
 }
 
 function updateThemeToggleUI(theme) {
@@ -1621,7 +1598,7 @@ function initCategoryModal() {
           const desc = it.description ? (it.description[currentLang] || it.description.es) : '';
           const imgHtml = it.image 
             ? `<img src="${it.image}" alt="${name}" class="cat-modal-item-img" loading="lazy">` 
-            : `<div class="cat-modal-item-img" style="display:flex;align-items:center;justify-content:center;color:#FFA4CB;font-size:1.4rem;background:#181B1A;">${meta.icon}</div>`;
+            : `<div class="cat-modal-item-img" style="display:flex;align-items:center;justify-content:center;color:#D9529C;font-size:1.4rem;background:#FFF0F6;border:1px solid #E8E2DE;">${meta.icon}</div>`;
           const orderText = (typeof TRANSLATIONS !== 'undefined' && TRANSLATIONS[currentLang]) ? (TRANSLATIONS[currentLang].order_item_btn || 'Pedir') : 'Pedir';
           const callText = (typeof TRANSLATIONS !== 'undefined' && TRANSLATIONS[currentLang]) ? (TRANSLATIONS[currentLang].cta_call_short || 'Llamar') : 'Llamar';
           const itemDoorDashUrl = it.id 
