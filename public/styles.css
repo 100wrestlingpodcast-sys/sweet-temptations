@@ -75,6 +75,9 @@
 
   --header-height: 54px;
   --bottom-bar-height: 60px;
+
+  --divider-header: rgba(255, 255, 255, 0.90);
+  --divider-hero: #FFFFFF;
 }
 
 [data-theme="dark"] {
@@ -94,6 +97,9 @@
   --color-lime-dark: #B5BE1D;
   --color-black-badge: #060707;
   --color-border: rgba(255, 255, 255, 0.10);
+
+  --divider-header: #FFA4CB;
+  --divider-hero: #FFA4CB;
 
   --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.35);
   --shadow-md: 0 6px 20px rgba(0, 0, 0, 0.45);
@@ -359,9 +365,10 @@ a {
   right: 0;
   height: var(--header-height);
   background-color: #090909;
-  border-bottom: 1px solid #1E201F;
+  border-bottom: 1.5px solid var(--divider-header, #FFFFFF);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
   z-index: 1000;
+  transition: border-color 0.3s ease;
 }
 
 .header-container {
@@ -576,7 +583,7 @@ a {
   position: relative;
   overflow: hidden;
   background-color: #090909;
-  border-bottom: 1px solid #1E201F;
+  border-bottom: 2px solid var(--divider-hero, #FFFFFF);
   min-height: 250px;
   height: auto;
   padding: 34px 0 28px;
@@ -585,6 +592,7 @@ a {
   justify-content: center;
   align-items: center;
   text-align: center;
+  transition: border-color 0.3s ease;
 }
 
 .hero-inner-container {
