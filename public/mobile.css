@@ -10,7 +10,7 @@
      1. Layout, Viewport Bounds & Safe Area Inset Variables
      ------------------------------------------------------------------------ */
   :root {
-    --header-height: 50px;
+    --header-height: 56px;
     --bottom-bar-height: 60px;
   }
 
@@ -63,18 +63,18 @@
   }
 
   /* ------------------------------------------------------------------------
-     2. Mobile Compact Header (Sleek 50px Bar, 36px Logo, 40px Controls)
+     2. Mobile Compact Header (Sleek 56px Bar, 42px Logo, 40px Controls)
      ------------------------------------------------------------------------ */
   .app-header {
-    height: 50px;
-    background-color: #090909;
-    border-bottom: 1.5px solid var(--divider-header, #FFFFFF) !important;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-    transition: border-color 0.3s ease;
+    height: 56px;
+    background-color: #AD246F;
+    border-bottom: 1.5px solid rgba(255, 255, 255, 0.35) !important;
+    box-shadow: 0 2px 10px rgba(173, 36, 111, 0.3);
+    transition: background-color 0.3s ease;
   }
 
   .header-container {
-    height: 50px;
+    height: 56px;
     padding: 0 10px;
     display: flex;
     align-items: center;
@@ -90,6 +90,7 @@
     align-items: center;
     justify-content: center;
     padding: 6px;
+    color: #FFFFFF !important;
   }
 
   .hamburger-inner,
@@ -105,9 +106,9 @@
   }
 
   .header-logo-img {
-    height: 36px;
+    height: 42px;
     width: auto;
-    max-width: 130px;
+    max-width: 150px;
     object-fit: contain;
     filter: brightness(0) invert(1);
     display: block;
@@ -119,153 +120,57 @@
     gap: 6px;
   }
 
-  .theme-toggle-btn {
-    min-height: 34px;
-    padding: 4px 9px;
-    font-size: 0.78rem;
-    background-color: #191B1A;
-    border: 1px solid #323634;
-    color: #FFFFFF;
-    border-radius: var(--radius-full);
-  }
-
-  .theme-toggle-btn:hover {
-    background-color: #242826;
-  }
-
   .lang-btn {
     min-height: 34px;
     min-width: 38px;
     padding: 4px 10px;
     font-size: 0.8rem;
-    background-color: #191B1A;
-    border: 1px solid #323634;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.4);
     color: #FFFFFF;
     border-radius: var(--radius-full);
   }
 
   .lang-btn:hover {
-    background-color: #242826;
+    background-color: rgba(255, 255, 255, 0.3);
   }
 
   .lang-indicator {
-    color: #9CA3AF;
+    color: rgba(255, 255, 255, 0.7);
   }
 
   .lang-indicator.active-lang {
-    color: #FFA4CB;
+    color: #FFFFFF;
     font-weight: 800;
   }
 
   .lang-divider {
-    color: #4B5563;
+    color: rgba(255, 255, 255, 0.5);
   }
 
   /* ------------------------------------------------------------------------
-     3. Mobile Hero (Compact Horizontal Banner, Bottom-to-Top Subtle Gradient,
-        Centered Single Title & One-Row Bottom Action Buttons)
+     3. Mobile Hero (Clean Brand Pink Banner, Large White Emblem & Buttons)
      ------------------------------------------------------------------------ */
   .hero-section {
-    min-height: 190px !important;
+    min-height: 220px !important;
     height: auto !important;
     max-height: none !important;
-    padding: 0 0 14px 0 !important;
-    background-color: #090909 !important;
-    border-bottom: 2px solid var(--divider-hero, #FFFFFF) !important;
+    padding: 20px 0 16px 0 !important;
+    background: #AD246F !important;
+    border-bottom: 2px solid #FFFFFF !important;
     display: flex !important;
     flex-direction: column !important;
-    justify-content: flex-end !important;
+    justify-content: center !important;
     align-items: center !important;
     position: relative !important;
     overflow: hidden !important;
-    transition: border-color 0.3s ease !important;
+    transition: background-color 0.3s ease !important;
   }
 
   .hero-visual,
-  .hero-gradient-overlay {
-    display: none !important;
-  }
-
-  /* Mobile Hero Decors: Organic corner curves entering top-left and bottom-right */
+  .hero-gradient-overlay,
   .hero-decor {
-    position: absolute !important;
-    pointer-events: none !important;
-    user-select: none !important;
-    z-index: 1 !important;
-  }
-
-  .hero-decor-pink-top {
     display: none !important;
-  }
-
-  .hero-decor-heart {
-    display: block !important;
-    position: absolute !important;
-    top: -12px !important;
-    right: 0 !important;
-    bottom: auto !important;
-    left: auto !important;
-    width: 90px !important;
-    max-width: 25vw !important;
-    height: auto !important;
-    transform: scaleY(-1) !important;
-    transform-origin: center center !important;
-    opacity: 0.92 !important;
-    z-index: 2 !important;
-    pointer-events: none !important;
-    filter: drop-shadow(0 2px 8px rgba(0,0,0,0.5)) !important;
-  }
-
-  .hero-decor-mobile-tl {
-    display: block !important;
-    position: absolute !important;
-    top: -50px !important;
-    left: -50px !important;
-    width: 260px !important;
-    max-width: 70vw !important;
-    height: auto !important;
-    transform: rotate(-25deg) !important;
-    transform-origin: center center !important;
-    pointer-events: none !important;
-    z-index: 1 !important;
-    opacity: 0.92 !important;
-    -webkit-mask-image: radial-gradient(ellipse 75% 75% at 22% 22%, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 32%, rgba(0,0,0,0.35) 54%, rgba(0,0,0,0.08) 70%, transparent 82%) !important;
-    mask-image: radial-gradient(ellipse 75% 75% at 22% 22%, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 32%, rgba(0,0,0,0.35) 54%, rgba(0,0,0,0.08) 70%, transparent 82%) !important;
-  }
-
-  .hero-decor-mobile-br {
-    display: block !important;
-    position: absolute !important;
-    bottom: -60px !important;
-    right: -45px !important;
-    width: 260px !important;
-    max-width: 70vw !important;
-    height: auto !important;
-    transform: rotate(155deg) !important;
-    transform-origin: center center !important;
-    pointer-events: none !important;
-    z-index: 1 !important;
-    opacity: 0.92 !important;
-    -webkit-mask-image: radial-gradient(ellipse 75% 75% at 22% 22%, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 32%, rgba(0,0,0,0.35) 54%, rgba(0,0,0,0.08) 70%, transparent 82%) !important;
-    mask-image: radial-gradient(ellipse 75% 75% at 22% 22%, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 32%, rgba(0,0,0,0.35) 54%, rgba(0,0,0,0.08) 70%, transparent 82%) !important;
-  }
-
-  /* Bottom-to-top subtle gradient covering only the bottom ~35% for contrast */
-  .hero-gradient-overlay {
-    position: absolute !important;
-    top: 0 !important;
-    left: 0 !important;
-    right: 0 !important;
-    bottom: 0 !important;
-    z-index: 2 !important;
-    pointer-events: none !important;
-    background: linear-gradient(
-      to top,
-      rgba(0, 0, 0, 0.90) 0%,
-      rgba(0, 0, 0, 0.62) 24%,
-      rgba(0, 0, 0, 0.15) 38%,
-      transparent 52%
-    ) !important;
   }
 
   .hero-inner-container {
@@ -306,10 +211,12 @@
   }
 
   .hero-logo-emblem {
-    width: 90px !important;
-    height: 90px !important;
+    width: 120px !important;
+    height: 120px !important;
+    max-width: 38vw !important;
     object-fit: contain !important;
     display: block !important;
+    filter: brightness(0) invert(1) drop-shadow(0 2px 8px rgba(0, 0, 0, 0.25)) !important;
   }
 
   /* Hide redundant kicker and subtitle exclusively on mobile */
@@ -329,17 +236,15 @@
 
   .hero-title {
     font-family: var(--font-serif) !important;
-    font-size: 1.35rem !important; /* ~22px */
+    font-size: 1.45rem !important; /* ~23px */
     font-weight: 700 !important;
     font-style: italic !important;
     line-height: 1.18 !important;
     color: #FFFFFF !important;
     text-align: center !important;
-    margin: 0 0 10px 0 !important;
+    margin: 0 0 12px 0 !important;
     letter-spacing: -0.01em !important;
-    -webkit-text-stroke: 0.75px #000000 !important;
-    paint-order: stroke fill !important;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.95), 0 0 10px rgba(0, 0, 0, 0.7) !important;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.35) !important;
     width: 100% !important;
     max-width: 100% !important;
   }
@@ -378,19 +283,20 @@
   }
 
   .btn-hero.btn-primary {
-    background-color: var(--color-fuchsia);
-    color: #FFFFFF;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    background-color: #FFFFFF !important;
+    color: #AD246F !important;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.25) !important;
+    font-weight: 800 !important;
   }
 
   .btn-hero.btn-secondary,
   .btn-hero-outline {
-    background-color: rgba(0, 0, 0, 0.55);
-    color: #FFFFFF;
-    border: 1.5px solid rgba(255, 255, 255, 0.75);
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.18) !important;
+    color: #FFFFFF !important;
+    border: 1.5px solid #FFFFFF !important;
+    backdrop-filter: blur(6px) !important;
+    -webkit-backdrop-filter: blur(6px) !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25) !important;
   }
 
   /* Extra compact adjustments for very small screens (320px) */
