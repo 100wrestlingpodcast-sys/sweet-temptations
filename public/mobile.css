@@ -99,6 +99,45 @@
     background-color: #AD246F !important;
   }
 
+  .side-nav .close-btn,
+  #nav-close-btn {
+    background-color: var(--color-pink) !important;
+    color: var(--color-ink) !important;
+    border: 1px solid var(--color-pink-border) !important;
+    border-radius: var(--radius-full) !important;
+    width: 38px !important;
+    height: 38px !important;
+    min-width: 38px !important;
+    min-height: 38px !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-shadow: 0 2px 6px rgba(44, 42, 41, 0.08) !important;
+  }
+
+  .side-nav .close-btn svg,
+  #nav-close-btn svg {
+    stroke: var(--color-ink) !important;
+    stroke-width: 2.2 !important;
+  }
+
+  .side-nav .close-btn:hover,
+  .side-nav .close-btn:focus-visible,
+  #nav-close-btn:hover,
+  #nav-close-btn:focus-visible {
+    background-color: #EAC9D8 !important;
+    color: var(--color-fuchsia-dark) !important;
+    border-color: var(--color-pink-border) !important;
+  }
+
+  .side-nav .close-btn:hover svg,
+  .side-nav .close-btn:focus-visible svg,
+  #nav-close-btn:hover svg,
+  #nav-close-btn:focus-visible svg {
+    stroke: var(--color-fuchsia-dark) !important;
+  }
+
   .header-actions {
     display: flex;
     align-items: center;
