@@ -67,9 +67,9 @@
      ------------------------------------------------------------------------ */
   .app-header {
     height: 50px;
-    background-color: #AD246F;
-    border-bottom: 1.5px solid rgba(255, 255, 255, 0.35) !important;
-    box-shadow: 0 2px 10px rgba(173, 36, 111, 0.3);
+    background-color: #EDCCD7;
+    border-bottom: 1.5px solid rgba(255, 255, 255, 0.7) !important;
+    box-shadow: 0 2px 10px rgba(180, 120, 140, 0.25);
     transition: background-color 0.3s ease;
   }
 
@@ -96,7 +96,7 @@
   .hamburger-inner,
   .hamburger-inner::before,
   .hamburger-inner::after {
-    background-color: #FFFFFF !important;
+    background-color: #AD246F !important;
   }
 
   .header-actions {
@@ -110,38 +110,38 @@
     min-width: 38px;
     padding: 4px 10px;
     font-size: 0.8rem;
-    background-color: rgba(255, 255, 255, 0.2);
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    color: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(173, 36, 111, 0.4);
+    color: #AD246F;
     border-radius: var(--radius-full);
   }
 
   .lang-btn:hover {
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: #FFFFFF;
   }
 
   .lang-indicator {
-    color: rgba(255, 255, 255, 0.7);
+    color: #7A2250;
   }
 
   .lang-indicator.active-lang {
-    color: #FFFFFF;
+    color: #AD246F;
     font-weight: 800;
   }
 
   .lang-divider {
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(173, 36, 111, 0.5);
   }
 
   /* ------------------------------------------------------------------------
-     3. Mobile Hero (Clean Brand Pink Banner, Large White Emblem & Buttons)
+     3. Mobile Hero (Clean Soft Pink Banner, Large White Emblem & Buttons)
      ------------------------------------------------------------------------ */
   .hero-section {
     min-height: 220px !important;
     height: auto !important;
     max-height: none !important;
     padding: 20px 0 16px 0 !important;
-    background: #AD246F !important;
+    background: #EDCCD7 !important;
     border-bottom: 2px solid #FFFFFF !important;
     display: flex !important;
     flex-direction: column !important;
@@ -201,7 +201,7 @@
     max-width: 38vw !important;
     object-fit: contain !important;
     display: block !important;
-    filter: brightness(0) invert(1) drop-shadow(0 2px 8px rgba(0, 0, 0, 0.25)) !important;
+    filter: brightness(0) invert(1) drop-shadow(0 2px 10px rgba(0, 0, 0, 0.40)) drop-shadow(0 0 1px rgba(0, 0, 0, 0.45)) !important;
   }
 
   /* Hide redundant kicker and subtitle exclusively on mobile */
@@ -229,7 +229,9 @@
     text-align: center !important;
     margin: 0 0 12px 0 !important;
     letter-spacing: -0.01em !important;
-    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.35) !important;
+    -webkit-text-stroke: 0.9px #000000 !important;
+    paint-order: stroke fill !important;
+    text-shadow: none !important;
     width: 100% !important;
     max-width: 100% !important;
   }
@@ -276,12 +278,11 @@
 
   .btn-hero.btn-secondary,
   .btn-hero-outline {
-    background-color: rgba(255, 255, 255, 0.18) !important;
-    color: #FFFFFF !important;
-    border: 1.5px solid #FFFFFF !important;
-    backdrop-filter: blur(6px) !important;
-    -webkit-backdrop-filter: blur(6px) !important;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25) !important;
+    background-color: rgba(255, 255, 255, 0.90) !important;
+    color: #AD246F !important;
+    border: 1.5px solid #AD246F !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12) !important;
+    font-weight: 700 !important;
   }
 
   /* Extra compact adjustments for very small screens (320px) */

@@ -364,9 +364,9 @@ a {
   left: 0;
   right: 0;
   height: var(--header-height);
-  background-color: #AD246F;
-  border-bottom: 1.5px solid rgba(255, 255, 255, 0.35);
-  box-shadow: 0 2px 10px rgba(173, 36, 111, 0.35);
+  background-color: #EDCCD7;
+  border-bottom: 1.5px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0 2px 10px rgba(180, 120, 140, 0.25);
   z-index: 1000;
   transition: background-color 0.3s ease;
 }
@@ -412,8 +412,8 @@ a {
   content: '';
   display: block;
   width: 100%;
-  height: 2px;
-  background-color: #FFFFFF;
+  height: 2.5px;
+  background-color: #AD246F;
   border-radius: 2px;
   transition: all 0.2s ease;
 }
@@ -430,35 +430,34 @@ a {
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  background-color: rgba(255, 255, 255, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(173, 36, 111, 0.4);
   padding: 6px 12px;
   border-radius: var(--radius-full);
   font-size: 0.82rem;
   font-weight: 700;
-  color: #FFFFFF;
+  color: #AD246F;
   min-height: 36px;
   transition: all 0.2s ease;
 }
 
 .lang-btn:hover {
-  background-color: rgba(255, 255, 255, 0.3);
-  border-color: #FFFFFF;
+  background-color: #FFFFFF;
+  border-color: #AD246F;
 }
 
 .lang-indicator {
-  color: rgba(255, 255, 255, 0.7);
+  color: #7A2250;
   transition: opacity 0.2s;
 }
 
 .lang-indicator.active-lang {
-  color: #FFFFFF;
+  color: #AD246F;
   font-weight: 800;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .lang-divider {
-  color: #4B5563;
+  color: rgba(173, 36, 111, 0.5);
   font-size: 0.75rem;
 }
 
@@ -563,12 +562,12 @@ a {
 
 /* ==========================================================================
 /* ==========================================================================
-   Hero Section (Clean Brand Pink Banner with Large White Emblem)
+   Hero Section (Clean Soft Pink Banner with Large White Emblem)
    ========================================================================== */
 .hero-section {
   position: relative;
   overflow: hidden;
-  background: #AD246F;
+  background: #EDCCD7;
   border-bottom: 2px solid #FFFFFF;
   min-height: 270px;
   height: auto;
@@ -578,7 +577,7 @@ a {
   justify-content: center;
   align-items: center;
   text-align: center;
-  box-shadow: 0 4px 20px rgba(173, 36, 111, 0.25);
+  box-shadow: 0 4px 20px rgba(180, 120, 140, 0.2);
   transition: background-color 0.3s ease;
 }
 
@@ -624,7 +623,7 @@ a {
   max-width: 36vw;
   object-fit: contain;
   display: block;
-  filter: brightness(0) invert(1) drop-shadow(0 2px 8px rgba(0, 0, 0, 0.25));
+  filter: brightness(0) invert(1) drop-shadow(0 2px 6px rgba(80, 20, 50, 0.40)) drop-shadow(0 1px 2px rgba(80, 20, 50, 0.30));
 }
 
 .hero-text-block {
@@ -646,10 +645,12 @@ a {
   font-weight: 700;
   font-style: italic;
   line-height: 1.2;
-  color: #FFFFFF;
+  color: #FFFFFF !important;
   margin: 0 0 16px 0;
   letter-spacing: -0.01em;
-  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+  -webkit-text-stroke: 1px #000000 !important;
+  paint-order: stroke fill !important;
+  text-shadow: none !important;
 }
 
 .hero-actions {
@@ -686,18 +687,17 @@ a {
 }
 
 .btn-hero-outline {
-  background-color: rgba(255, 255, 255, 0.18);
-  color: #FFFFFF;
-  border: 1.5px solid #FFFFFF;
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.20);
+  background-color: rgba(255, 255, 255, 0.90);
+  color: #AD246F;
+  border: 1.5px solid #AD246F;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+  font-weight: 700;
 }
 
 .btn-hero-outline:hover {
-  background-color: rgba(255, 255, 255, 0.3);
-  border-color: #FFFFFF;
-  color: #FFFFFF;
+  background-color: #FFFFFF;
+  border-color: #8A1754;
+  color: #8A1754;
 }
 
 .hero-visual,
