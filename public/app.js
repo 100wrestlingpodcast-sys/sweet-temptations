@@ -362,34 +362,6 @@ const MENU_DATA = {
       },
       "items": [
         {
-          "id": "44648423601",
-          "name": {
-            "es": "Sunrise Croissant",
-            "en": "Sunrise Croissant"
-          },
-          "displayPrice": "$8.95",
-          "price": 8.95,
-          "from": false,
-          "description": null,
-          "image": "assets/menu/44648423601.jpg",
-          "isMostOrdered": true,
-          "orderUrl": "https://www.doordash.com/store/jb-sweet-temptations-magnolia-51904045/"
-        },
-        {
-          "id": "44648423602",
-          "name": {
-            "es": "Sunrise Croissant sin huevo",
-            "en": "Sunrise Croissant - No Egg"
-          },
-          "displayPrice": "$8.95",
-          "price": 8.95,
-          "from": false,
-          "description": null,
-          "image": "assets/menu/44648423602.jpg",
-          "isMostOrdered": false,
-          "orderUrl": "https://www.doordash.com/store/jb-sweet-temptations-magnolia-51904045/"
-        },
-        {
           "id": "44648423607",
           "name": {
             "es": "Galleta de Nutella (3–4 oz)",
@@ -524,6 +496,34 @@ const MENU_DATA = {
         "en": "Breakfast"
       },
       "items": [
+        {
+          "id": "44648423601",
+          "name": {
+            "es": "Sunrise Croissant",
+            "en": "Sunrise Croissant"
+          },
+          "displayPrice": "$8.95",
+          "price": 8.95,
+          "from": false,
+          "description": null,
+          "image": "assets/menu/44648423601.jpg",
+          "isMostOrdered": true,
+          "orderUrl": "https://www.doordash.com/store/jb-sweet-temptations-magnolia-51904045/"
+        },
+        {
+          "id": "44648423602",
+          "name": {
+            "es": "Sunrise Croissant sin huevo",
+            "en": "Sunrise Croissant - No Egg"
+          },
+          "displayPrice": "$8.95",
+          "price": 8.95,
+          "from": false,
+          "description": null,
+          "image": "assets/menu/44648423602.jpg",
+          "isMostOrdered": false,
+          "orderUrl": "https://www.doordash.com/store/jb-sweet-temptations-magnolia-51904045/"
+        },
         {
           "id": "44678383043",
           "name": {
