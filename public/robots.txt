@@ -1,3 +1,4 @@
-# Piloto de desarrollo
 User-agent: *
-Disallow: /
+Allow: /
+
+Sitemap: https://shopjbsweettemptations.com/sitemap.xml

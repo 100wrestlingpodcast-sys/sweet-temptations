@@ -821,7 +821,8 @@ const MENU_DATA = {
 // ==========================================================================
 const TRANSLATIONS = {
   es: {
-    page_title: "JB Sweet Temptations | Coffee • Bakery • Cake Design | Magnolia, TX",
+    page_title: "JB Sweet Temptations | Coffee, Bakery & Cake Design en Magnolia, TX",
+    meta_description: "Cafetería y repostería artesanal en Magnolia, TX (126 Roy St). Café, desayunos, croissants, waffles, quesitos, galletas y bizcochos personalizados. Pide por DoorDash.",
     skip_to_content: "Saltar al contenido principal",
     nav_home: "Inicio",
     nav_specialties: "Especialidades",
@@ -913,7 +914,7 @@ const TRANSLATIONS = {
     footer_links_title: "Navegación",
     footer_contact_title: "Contacto",
     footer_rights: "Todos los derechos reservados.",
-    footer_pilot_note: "Versión piloto de presentación comercial.",
+    footer_pilot_note: "Hecho con amor en Magnolia, Texas.",
     bar_call: "Llamar",
     bar_menu: "Menú",
     bar_directions: "Cómo llegar",
@@ -925,7 +926,8 @@ const TRANSLATIONS = {
     lightbox_next_label: "Foto siguiente"
   },
   en: {
-    page_title: "JB Sweet Temptations | Coffee • Bakery • Cake Design | Magnolia, TX",
+    page_title: "JB Sweet Temptations | Coffee, Bakery & Cake Design in Magnolia, TX",
+    meta_description: "Artisan coffee shop, Puerto Rican & European-inspired bakery, and custom cake design in Magnolia, TX (126 Roy St). Coffee, breakfast, croissants, waffles & more.",
     skip_to_content: "Skip to main content",
     nav_home: "Home",
     nav_specialties: "Specialties",
@@ -1017,7 +1019,7 @@ const TRANSLATIONS = {
     footer_links_title: "Navigation",
     footer_contact_title: "Contact",
     footer_rights: "All rights reserved.",
-    footer_pilot_note: "Commercial presentation pilot version.",
+    footer_pilot_note: "Crafted with love in Magnolia, Texas.",
     bar_call: "Call",
     bar_menu: "Menu",
     bar_directions: "Directions",
@@ -1092,9 +1094,13 @@ function initLanguage() {
 function applyLanguage(lang) {
   const dict = TRANSLATIONS[lang] || TRANSLATIONS.es;
   
-  // Update HTML lang attribute & document title
+  // Update HTML lang attribute, document title & meta description
   document.documentElement.lang = lang;
   document.title = dict.page_title;
+  const metaDesc = document.querySelector('meta[name="description"]');
+  if (metaDesc && dict.meta_description) {
+    metaDesc.setAttribute('content', dict.meta_description);
+  }
 
   // Update text elements with [data-i18n]
   document.querySelectorAll('[data-i18n]').forEach(el => {
